@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>home page</title>
+  <style>
+    body{
+      display:grid;
+    }
+   .nav {
+    margin: 0;
+    background-image: linear-gradient(-90deg,rgb(42, 188, 188),rgb(41, 26, 150)) ;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+   }
+   .nav-list{
+     margin: 16px;
+    padding-left: 0;
+
+   }
+   .nav-item{
+    color: aliceblue;
+   list-style: none;
+   margin: 0 8px;
+   display: inline-block;
+   }
+   .active:active{
+    color: black;
+   }
+   .video{
+    width: 700px;
+    height: 700px;
+    margin: auto;
+   }
+  </style>
+</head>
+ <body>
+ 
+   <div class= "nav">
+    <ul class= "nav-list">
+      <li class = "nav-item">java</li>
+      <li class = "nav-item">PHP</li>
+      <li class = "nav-item">javascript</li>
+    </ul>
+    <ul class = "nav-list">
+      <li class = "nav-item active"> 
+        <a href="./signUp.html">Sign in</a>
+      </li>
+      <li class = "nav-item active"> <a href="./signUp.html"> Sign up</a> </li>
+    </ul>
+   </div> 
+     <iframe class = "video" src="./y2meta.com-Rick Astley - Never Gonna Give You Up (Official Music Video)-(1080p).mp4"></iframe>
+ </body>
+</html>
