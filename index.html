@@ -1,828 +1,478 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="uft-8">
-    <title>Web content</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-<style>
-    body{
-        background-color: black;
-    }
-    .box {
-        display: flex;
-        margin: 0;
-        min-width: 50px;
-        justify-content:space-between;
-        background-color:#00000a;
-        border-bottom: 2px solid darkgray;
-    }
-    .box__item {
-        color: white;
-        padding-left: 20px;
-        list-style: none;
-        font-size: 20px;
-        text-decoration: none;
-        
 
-    }
-
-    .box__item:hover {
-        color: coral;
-    }
-    .box__element {
-        display:inline-flex;
-        
-      
-    }
-    /* .signOut{
-        width: 300px;
-        height: 100px;
-        background-color: antiquewhite;
-        margin-top: 20%;
-        margin-left: 45%;
-        display: none;
-        position: absolute;
-        
-    
-    }
-    .signOut-Sure{
-        list-style: none;
-        display: inline-flex;
-        margin-left: 60px;
-        justify-content: space-between;
-      
-
-
-    }
-    .signOut__Yes{
-        padding-right: 56px;
-        color: rgb(15, 121, 59);
-        text-decoration: none;
-       
-    }
-    .signOut__No {
-        color: red;
-    }
-    .signOut-title {
-        margin-left: 16px;
-    }
-
-    */
-
-        .boxSI-label{
-        color: rgba(4, 2, 32, 0.778);
-         min-width: 100px;
-          
-        }
-        .input{
-          display: flex;
-         flex: 1;    
-        }
-         .boxSI-align{
-            width: 70px;
-            margin-top: 50px;
-            margin-left: 170px;
-         }
-      
-       #next {
-        font-size: 16px;
-        display: none;
-       }
-         .notification{
-            color:red;
-            font-size: 13px;
-            min-width: 100px;
-            display: inline-flex;
-            display: none;
-         }
-         .next{
-          min-width: 100px;
-         text-decoration: none;
-         color: black;
-         font-size: 16px;
-             }
-   
-         
-         .next:hover{
-          color: #dc4a38;
-         }
-         .align {
-          display: inline-flex;
-          
-
-         }
-
-      
-         /* css sign up */
-
-         .boxSU{
-          height: 300px;
-            width: 450px;
-            background-color: beige;
-            /* background-position:  bottom center; */
-            /* margin-top: 40px;
-            margin-left: 50%; */
-            display: none;
-                transform: translate(-50%,-50%);
-            /* display: flex; */
-            border-radius: 10px;
-           position: absolute;
-           z-index: 3;
-           top:500px;
-           left: 50%;
-       
-        }
-        .boxSI{
-            height: 300px;
-            width: 450px;
-            background-color: beige;
-            /* background-position:  bottom center; */
-            /* margin-top: 40px;
-            margin-left: 50%; */
-            display: none;
-                transform: translate(-50%,-50%);
-            /* display: flex; */
-            border-radius: 10px;
-           position: absolute;
-           z-index: 3;
-           top:500px;
-           left: 50%;
-       
-        }
-        .display{
-           margin:auto;
-        }
-        .describe{
-            margin: 0;
-        }
-        .notificationSU {
-            display: none;
-            color: red;
-            font-size: 13px;
-        }
-        .displayResult {
-            color: rgb(41, 213, 78);
-            display: none ;
-        }
-        .nextSU{
-            display: inline-flex;
-        
-        }
-        .alignment{
-          margin-top: 15px;
-          margin-left: 150px;
-        }
-       
-
-    .java-father {
-        width: 74%;
-        height: 550px;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-left:10% ;
-        margin-top: 50px; 
-        border-radius: 10px;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-       
-     
-        
-    }
-    .descripbeWeb{
-        color: orange;
-        font-size: 20px;
-        margin-top: 17px;
-    }
-    .java-father-text__theFirst{
-        width: 500px;
-        height: 100px;
-        color: white;
-        background-color: black;
-        border-radius:10px;
-        margin-left: 30px;
-       padding-top: 10px;
-    }
-    .java-father-text__theSecond{
-        color: white;
-        background-color: black;
-        width: 500px;
-        height: 431px;
-        border-radius:10px;
-        margin-left: 30px;
-       padding-top: 10px;
-    }
-
-    .music{
-        width: 26%;
-        min-height: 300px;
-        background-color: black;
-        position: absolute;
-        top: 200px;
-        border-radius: 10px;
-        border: 2px solid darkgray;
-        
-        
-    }
-    .img__javaFather {
-        width: 500px;
-        border-radius:10px ;
-    }
-    .embrace {
-        width: 100%;
-        height: 1000px;
-    }
-    .relaxPlaylist1 {
-        display: nonAe;
-        position: absolute;
-        top:455px;
-        border-radius: 10px;
-        
-        
-    }
-    
-    .video {
-        margin-top: 120px;
-        width: 150px;
-        border: 2px solid darkgray;
-    }
-    .relaxPlaylist2 {
-        display: none;
-        position: absolute;
-        top:455px;
-        border-radius: 10px;
-    }
-    
-    .relaxPlaylist3 {
-        display: none;
-         position: absolute;
-        top:455px;
-        border-radius: 10px;
-    }
-    
-    .relaxPlaylist4 {
-        display: none;
-        position: absolute;
-        top:455px;
-        border-radius: 10px;
-    }
-    
-    .relaxPlaylist5 {
-        display: none;
-        position: absolute;
-        top:455px;
-        border-radius: 10px;
-    }
-    
-    /* .upbeatPlaylist1 {
-        display: none;
-    }
-    
-    .upbeatPlaylist2 {
-        display: none;
-    }
-    
-    .upbeatPlaylist3 {
-        display: none;
-    }
-    
-    .upbeatPlaylist4 {
-        display: none;
-    }
-    
-    .upbeatPlaylist5 {
-        display: none;
-    } */
-   
-    /* js father */
-    .js-father {
-        width: 74%;
-        height: 550px;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-left:10% ;
-        margin-top: 50px; 
-        border-radius: 10px;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-     
-        
-    }
-    .descripbeWeb{
-        color: orange;
-        font-size: 20px;
-        margin-top: 17px;
-    }
-    .js-father-text__theFirst{
-        width: 500px;
-        height: 100px;
-        color: white;
-        background-color: black;
-        border-radius:10px;
-        margin-left: 30px;
-       padding-top: 10px;
-    }
-  
-    
-    .img__jsFather {
-        width: 500px;
-        border-radius:10px ;
-    }
-    .js-father-text__theSecond{
-        color: white;
-        background-color: black;
-        width: 500px;
-        height: 431px;
-        border-radius:10px;
-        margin-left: 30px;
-       padding-top: 10px;
-    }
-
-  .linkwebRelax {
-    color: aliceblue;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  .linkwebRelax:hover {
-    color: #dc4a38;
-  }
-  .note {
-    position: absolute;
-    z-index: 9;
-    width: 15%;
-    height: 200px;
-    background-color:black;
-    border: 2px solid darkgray;
-    color: #dc4a38;
-    left:84%;
-    top:190px
-  }
-</style>
 <body>
-   <!-- note -->
+    
+
+    <!-- note -->
    <div class ="note"> <h4 style="margin: 10px;">note: vì chưa có web hosting nên chưa sài được sign in và sign up. nên mọi người có thể bấm vào Realax code  để có thể qua trang nhé :>> </h4></div>
 
 
-    <!-- toolbar -->
-    <div class = "box">
-        <ul class="box__element">
-            <li class ="box__item" ><a class = "box__item" href="./webPartJava.html"> Java</a></li>
-            <li class ="box__item"><a class = "box__item" href="./webPartJavascript.html"> Javascript</a></li>
-            <li class ="box__item"><a class = "box__item" href="./webPartPHP.html"> PHP</a></li>
-        </ul>
-        <li class="next"style="margin-top:18px ;"> <a class="linkwebRelax" href="./webCode.html">  Relax code</a> </li>
-        <ul class ="box__element" >
-            <li class ="box__item"> Sign in </li>
-            <li class ="box__item"> Sign up </li>
+   <!-- toolbar -->
+   <div class = "box">
+       <ul class="box__element">
+           <li class ="box__item" ><a class = "box__item" href="./webPartJava.html"> Java</a></li>
+           <li class ="box__item"><a class = "box__item" href="./webPartJavascript.html"> Javascript</a></li>
+           <li class ="box__item"><a class = "box__item" href="./webPartPHP.html">C++</a></li>
+       </ul>
+       <li  class="next"style="margin-top:18px; list-style:none;"> <a class="linkwebRelax" href="./webCode.html">  Relax code</a> </li>
+       <ul class ="box__element" >
+           <li class ="box__item"> Sign in </li>
+           <li class ="box__item"> Sign up </li>
 
-        </ul>
-    </div>
-
-
+       </ul>
+   </div>
 
 
-    <div class ="embrace">
-           <!--sign out -->
-    <!-- <div class="signOut">
-        <h3 class ="signOut-title"> you are sure you want to sign out </h3>
-        <ul class="signOut-Sure">
-            <li class = "signOut__Yes"> <a class ="signOut__Yes" href="./index.html">Yes</a></li>
-            <li class = "signOut__No" > No</li>
-        </ul>
-    </div> -->
 
-    <!-------------------------------------------------->
-   
-    <!-- cha de cua Java -->
-    <div style="width: 50%; height:50px;background-color:black; border-radius: 10px; margin-left: 31%;"><h1 style="color: rgb(238, 241, 245); margin-left: 160px;">java Father</h1></div>
-    <div class ="java-father" >    <!--m3-->
-        <img class ="img__javaFather" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVFRgVFRUYGBgYGBgYGBgYGBgYEhgYGBgZGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHDQhISE0NDQ0NDE0NDQ0MTQ0NDQ0NDQxNDQxNDQ0NDQ0NDQ0NDQ0NDE0NDQ0NDQ0MTQ0ND8/NP/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQAGB//EADsQAAIBAgMFBgQEBQMFAAAAAAABAgMRBCExBRJBUXEiYYGRocEysdHwBhNC4VJigpLxFBWyIyRDcqL/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAjEQEBAQADAAMAAgIDAAAAAAAAAQIRITEDEkFRYRMiMlKB/9oADAMBAAIRAxEAPwDycicMu0RIthviK68O9Ns82Y6GPs82I6HOIdQXqIZkgM0bXgxn1Yi04Zj9VCs4nNpeCYZGpQM7Do0KIIFNxCIFFhYjAvBhECgFRmSSiA9Gg3ney5/TmZgo3Y7R2ZVlm0ox5ydvTUNHERgrQir/AMcrOXhyKPEuTvKTkPMz9GZ1TVLYtP8AVVu/5Ure40tjYd/ql/cvoIU8WuQ/RrxY0mf4LrGp+h1tgQteMpLrZox8bsirHTtrnHXyPUwlyYOo88svkHWM0ubY8DUg9M7i8oPkezx2FhPNrPg+K8TCxOzpLjlzs7+P1I3KrBlEHKA9icO0+fQXlBoVi1iJRD2KziYSNaIvOI5WQvNZHTjxz69ZuJiLU0NYhC9NG2OR4xIkgkURJEFArHE7pwOWLSLYb4isicP8R6OvEHptnaGzHQxdnvQ2oaERRJAZIYkBkhdeNClWItOI7UQtNHLp0RNJD1ITpIcpmjUzELECgsRiroNEHFIZhTWr/c0nPgW8Jo0b3csorNtg6u0I37CstFxf+RfaWMv2I5RWb72I0pWDbx1FMZ57rUjUbzfqGjIToSGYjRbqCwG8PMWhILRkGF1WrRqMLv37zOo1PvwGYzVrjpWdorPiugu3zWpM55lZyuTtUk6L4nCqSstOWZg4vBbry8v3PSRdtcymLw0ZwbS06m4+yWv9a8julZIer0bMVqxJWcUeSFZC81kN1kLTR1Y8Q16zMSgNNDGJQKkhdjkaKKtBUgbRGqB2OLWOFYjImhqRImjqelrxzx6TZzNqnoYWz5aG1TeRCHEYORdsFJmoQKogE0MVAUjk2vlWmN0xaCGYAyNMIJEEHgOUaEcrgcViWm1oExM91GQ6l22x+PrCz/arF4IXhPMPTEdOTMJMZpzYtBaajVKAZTGKb7xi3Ji0EMqPIctdCbCqo+ZXdJsYqd/nc6csism/vQrKYtNFt4NQrWuhJyzOlLNd+XebN7J8meYVx9r5fLhwszJqo0sVJt24+jvxQnVzQNztKXpm1kL1ENV0K1NC+PE9es3EgqSDYgpSQvyDkVIpJBSk0QqgVjiTgCz2dT1OZENT0deOaN/AM26UjBwDNqk8iE9ONJlSGzkGhESBMvOQGcjn3Fs3heAxAThIbpsWQbTUI3DxBU2hhNBkLWZtHEaLiIwep21p2mr9/wAgODbaz42Y9bHpqkrsep0mKfmKKyWZeO0ba27/ALsLItNHo2QzTqmM9r09HZd/APRxUZZxaDIeWVsxmvUP+YlbvuY2GxN21yDTr2az0Xuhmsa8aqvqHi0zz89p04fEyP8Ae4t5St8jcwlj0E6fEUnKzEcNtKTeV2umXmx9zjNXQt/pp0XnIHVnZJ96JkhTFy7IM3sdf8QMRiG+vDo87Ezimk073z/YzJ1Xdc72b6afJDuBqxlFpfv1Q2nPCtdC9QbxMbClUtnxPXrLxJFJFsTqRRJ/IfArRVouyrI1SAnHHAFnM6nqRI6nqejrxzT1tYFmzSkYeCZsU3kc/PahhyIuCbOTGpYmbATDsFOBHVPIrTY7SYpCI7h4N6CcjwZpsZjTbV+BNLCS1y9w81ZWGkC15f8AENB7t0IYCs1Htpp2Vu9WyaR6LadJSTT0sZH+gpxnTk45qVOzu9N9LS9uIZ31Wz13ERW8lJyyd+zHRK/PW/kWk6CS3nbrKXuy20IycmotK/Hl3ia2ck95tt827/sGSKTnh1SWEk7KbTeebnZvW3XtNlISoRjFLecmpptTaSl+lrmuafg0WpYShCSclfq2+FhbF0IRjeN7Xyu9GU646Di+09syrDjv3vnuqcrP+niG2huuSUG72bd95NLLVS0efHvHfwfR/wCmpWznKU3l/FJtJ+FiNu01GtvKK7VN92cJb2duCjvvyEk5VtsyxYUYXvJvLm28+jY5hp0I2WSu+TtcXq01rmt7O6yfenyLQ2bGc4yU5RcbWcXu5rR6ahknPdJZZ5HqsHOk4OSed7JRfz7vqUxOIku0rbq+NKyyv8a4Zce5X65WG2M4ZwnK/N6NLS+Rp07OElOLvuyT03GrZtc1Z8ja48aS+urbRpQspTjvPRavlos9UzM2hipv4ISeTzknFctJZ8eRo4bDwjCMowhBuMW9yCV3uq7ckkEhSvnzT81mvcnOOeh1zx28fu1FnOSve/cnxNPZ9Ttp31WVtAOOw+uXFk4aNtxPVfJmtHXxyZ5P4t+YnWHsUtBGsXzenJr1l4jU6kiK+pemS+Q+F2iJF5IqyVUgFzjmiBR4ZrOgdI6B6W/HLPWrhGakJGThmaUJHJz2r+DuRMZAd4mMhrWMpklYssQ1VMxMUNUYW0a9xRB4CyjY1YV8u8tOq+glSXEtOTK8p8B4mV9epmTvJu2uVm80ms0/NDeMvay1YpGVr+XoDk+Z2POnkpPNSV+avxUu9feoCWFg/wBKLQlfRtX5PXqtH4hFTm9Zp/0RX/FIeWLTNkDWFhHRfQUx8FNqF1mrtfy6Pz08XyL42soq2/JvklFetrrzKYWjBQ33nKVpPO78W9TVuOXp9gULRS0yLbTwSl+rdlF70Za2a0uuK7gez8UlbMYq14Slmw9cGs7Yipp3eVr2lHVRf8LfFZNp8V33SvS2dBvl0FdrwcKinC6TXa3W07Xz04fQLga6l/5JLutBr/jc3QTNa+HwMIZ9q/8A7O3lctiZ7y3MryVuTUXk5+Cvbm8isW2s6sn0UIf/AFGKl6kUbLJcc29W3zb1b6m1w2c2+jVYapaPNW0t05iuIbjF2/hdvv74j0FddNAU6alfvy63+7eJKehph/l3iri2GW/Jvvy6cBra9VUoN/ql2YrrxAbOj2UxqHy654hvEZL0M6sN4iV2J1i2ZxHHr1m1nmXp6A6uoSmS+RTPgrKMuyjJU8AbIOZwBZkiaZWRNM9Hfjmz60sMaMGZ2GH4nJfVfxdstBlCYhaGoBQEGHRHSkcgkGDuSmLGpqE7F51OQvBl4sfknAUFvJyfRfsJ11b7y8DUUVoZWNh9+YT56oEajRFTFytbjwXqW/Lu7L/BeNKEG5ylbToks/nZ+CHyrd8QmsLJ9qWbflYrVhOOja+XI0P9xouaW8k3ZJeOfsv8EY6UHBycs8u/NvRLzGsT+1pKlj2rWl8/EYhTq1Jb0ZyS5LK3XixeeFWTTTyV+WmZs7NmoSUW1azfclZNZ8LN/dgG+1kNf6OSh2u02tefQ87iYOnO+ib8OqPbTxdNJXasr/P9jFxUKc7ptNSvmtLpZ9NH5oNhZ8tKYXGvnccjijGw+FcJ7r6p8LPgaX5bWXP0F10tN8xrYPE3uOxXHmn1MejHd4+K7rB9qYvcoSzcW+ynyk72z6pgzO0t3p578RPfxCindRSt1epo4drcVjzmzW5zu3d63fkejhC0TfqerzbQqqsLVmGnqL13kdE8QrPqahKYKeoSBD5FciyZVsllZEjgtnFWzgAzZE0ykmWpno78Qz60sMPQM/DM0IM4/wBW/BDolSUMUzEOmLxDRZHSuViUypKYsaiQYVC8WGQ9KLBiuMhz0s35L6hos6vC6y1+hs3tv7Z9Cm29OH0+oLGJOGff7L6+g1CdpW0XZ9r+auhOpU7TSWjatwyfH74FZODfbmMzFbJhNXevBlsJhXCG5ODkk42cVdqOjvzVvka1OLtb/BMZ2Nzz0pJm+lYYanu333F3s07p/Fya5cSa1Gkk1CTnLdbSjdreV7LeWUcx+FdJvLPjl4e41RxcVpGPkvQP/o/X+3nsTs2pKyhHdWWcn2sly6/IPhtjzpxvOcpvvejetvBehuxnd3uA2lWSSXf9fMH2/IGs5iMNTeW9m03d872fzuNO2vcvW6M/DYhKMc1m8++/2i6rXVunz09ULSy9HISTUrLP1u3/AIAfiNOVNQjq5X+bXTX0Iwk2lvPm7317vYLSk5Nt53dwlvfLL2ds7cSvrqaVTQPJC9UX9J+E56i9cPJitdnTEaRlqFgBk8w0CHyeq58EZSRZlZkjl5EESZxgZsi1Moy1I9DfiGWjhh+DM/Dj8Gcf6t+CExKlojFMUwsGBpsLEjpTKzZCkVmRcGRo8WFiwEGXixqUdMlMGmXQGY21ZODtwkvbXzIw1WKhObzlN2irZ53a8XmNbZhGUNVvLNZ5/ehhUa3NOylJrra3pf1LZvJL016U7Rzeba6JJcOfDxSGIUW7ZWb0XFLx7s/IVwPakot6adz6dHlfn4GnDOe6m22n2uNrpWT/AKvTpbXJ86cqSvlmnv587Wt7omGDSzemXje/u/uxNOrwtnZx0Wibs+mayDVsTvb3Ddd/CTTiut7+JvqbkCdXd8fDk2ZmMqXTb1Um1yTtmvHsjGPkk7X/AJlnrkm0v7r9DKxVey1ds2r6/Fp5K/k+JpOG1rnwOlXtNxz1aXn817Gthp5Sfgvb5+p5mnX3pN6b3H528uuZs4BylHPnfr95eRiTm9NOM8revP7uxzDJ2y438xONkO0JWfRE7V5nohhtq71SVKatJaPgxqqeM2vtT/u3OGkGkuTtkzfwW14VVZ2jLlzKXF5ljmmp3kaTFq7GJsVxDLTxP9JPUNAXvmMQOffquVys2WZSRNQszirOMVnMvSBsvTO/fiEaGHY9BmfQY7BnL+rGCYg1IspBKZgwqYvBhYsltTK0mVUjpsFvpasGRpiDC7xl4jadOHG55/H7cnPJOyK5+PWktbkeoxW2KUNZXfJHn8d+JaksoZLmedqV3Lj9QUp24lc/FmJXeqfq46bd5Tbaz1NmDc4Qmlk1nbnx+R5LePUfhnFpwdN6xd10Yd9TmD8fd4rVweKtPeXBZLln9+pt4fEJPetwhk9bN393l3mHPCq915eoZ4prdvZNPhxSyt5XXgJLypZY06NdQnZvKKX7+rivADOs4ytfsTuui0WvVO3MzKuJzunluq/F5PkUxOIcoKEHpfe5dq1rPnaIa05ExmOU5Xu+y0r63Ube0beD5mbjYudnn2r5crXSRaFCUnnouHC9vvzG40Vos3z9/USmmaSwOBbavz9vY9FShZKwPDUt1BW+QtXzngxB8fAyPxBtlUYOEH25qy/lT4gdsbdhSTis58EtF3s8PiMROc3KTu282PjHN5viXzfL9Z9c+jRk2xulVas07NZidNWCxfE6eHFy9LhNtq1qn9y08R6dWMleLTR5CMg1KtKPwu3yB9f4Ga/l6C+YaDMrDbQi/jyfPgakGcvySyujFlnQlykmWbBzZFUvJklJM4JWe2WhIHJlIyO/U6c8aVCY9TkZFGZoUZnNZ2rKcTJTBKZaMjMahIXxO0oQy1YPE4pQi7s8riMW7vMOfj+3oa3x1G3iNsSfcZtfaUnxZlzrtlPzC2cSeRG61faPVrSYpJy5Mu6pX818xwUbkQyzmwbAyUwmGxUqc1OLzXk+aYG5EjWDOn0HZm0oVoKSefGL1T+geUU9T5xh8ROEt6EmmuX3mehwn4n4VI2f8Uc15Eb8dl6Xz8kvr0Dw8VnbUtCiuBmw23RlpNeOT9S09sUl+uPmheKfnLSvb5BqcUs3qedn+IaMdG5PuT9xDFfiao8oRUe95vwWiD9bR/yZy9fXxkIK8pJLyueb2n+Jm7xpZfzvXwR5yviak3ecnJ95SEGPn45PUtfNb1OhJTcndttvVvUJCNisIl0/IqgumXcilzjMIpl1MAcpGKcjMZw+KnDOL8HoZqmXjPvBZL6Mtnj0WG2jCWUuy/TwY3N5HllMbw+MlDK91yfsyGvh/crZ+b/s1JM4U/10O/yOJf49fwp9s/yXkyEiTjt0jBqY9SZxxHR4YiytesoxcuRxwk9G+PM43HSkxCcyDjoiCm8Ucjjgs7eO3jjjM7eO3jjgMjeOuccFlWQ0ccAUOJ24ccZkqBZQOOCCysXjmccZk7xeLIOCyVItck4zKuR1zjgMlMsmccYF1NhIzOOMAm+cccZn/9k=" alt="java father">
-        <div class ="java-father-text">  <!--m2-->
-            <div class ="java-father-text__theFirst"> <!--m0-->
-                <p>James Arthur Gosling (sinh ngày 19 tháng 5 năm 1955 gần Calgary, Alberta, Canada) là một nhà phát triển phần mềm nổi tiếng. Ông là cha đẻ của ngôn ngữ lập trình Java</p>
-            </div>   <!--d0-->
-            <div class="java-father-text__theSecond">  <!--m1-->
-                <p>Từ năm 1984, James Gosling đã vào làm việc tại Sun Microsystems. Năm 2005 ông là CTO của nhóm phát triển sản phẩm. Sau thương vụ mua Sun Microsystems của Oracle vào ngày 21 tháng 1 năm 2010, James Gosling chính thức rời Oracle vào 2 tháng 4 năm 2010.
-                    Ngày 28 tháng 3 năm 2011, ông tuyên bố trên blog cá nhân rằng ông đã gia nhập Google.</p>
-                <p>Nói chung ông được xem như là nhà phát minh của ngôn ngữ lập trình Java vào năm 1994. Ông đã thiết kế gốc của Java và đã cài đặt trình biên dịch và máy ảo gốc của nó. Với thành tựu này ông đã được bầu vào Hiệp hội Kỹ sư Quốc gia (National Academy of Engineering) của Hoa Kỳ.</p>
-                <p>Ông cũng có những đóng góp lớn vào nhiều hệ phần mềm khác như NeWS và Gosling Emacs. Và ông cũng được công nhận như là tác giả công cụ biên tập WYSIWYG.
 
-                    Ông còn đóng góp nhiều thành tựu khác (ít được biết và do ông tham gia các nhóm làm dự án này):</p>
-                <p>- Chương trình quản lý các cửa sổ</p>
-                <p>- Hệ thống mail</p>
-                <p>- Phiên bản đa lõi cho máy chủ Unix</p>
-                         
-      </div>          <!--d1-->
-      
-    </div>        <!--d2-->
+   <!-- <div class ="embrace"> -->
+          <!--sign out -->
+   <!-- <div class="signOut">
+       <h3 class ="signOut-title"> you are sure you want to sign out </h3>
+       <ul class="signOut-Sure">
+           <li class = "signOut__Yes"> <a class ="signOut__Yes" href="./index.html">Yes</a></li>
+           <li class = "signOut__No" > No</li>
+       </ul>
+   </div> -->
+
+   <!-------------------------------------------------->
   
+   <!-- cha de cua Java -->
+   <div style=" border-top: 2px solid darkgray ;margin-left: 5% ;width: 90%; height:50px;background-color:black; margin-top: 200px;"><h1 style="color: rgb(238, 241, 245); margin-left: 45%;">java Father</h1></div>
+   <div class ="java-father" >    <!--m3-->
+       
+       <img class ="img__javaFather" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVFRgVFRUYGBgYGBgYGBgYGBgYEhgYGBgZGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHDQhISE0NDQ0NDE0NDQ0MTQ0NDQ0NDQxNDQxNDQ0NDQ0NDQ0NDQ0NDE0NDQ0NDQ0MTQ0ND8/NP/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQAGB//EADsQAAIBAgMFBgQEBQMFAAAAAAABAgMRBCExBRJBUXEiYYGRocEysdHwBhNC4VJigpLxFBWyIyRDcqL/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAjEQEBAQADAAMAAgIDAAAAAAAAAQIRITEDEkFRYRMiMlKB/9oADAMBAAIRAxEAPwDycicMu0RIthviK68O9Ns82Y6GPs82I6HOIdQXqIZkgM0bXgxn1Yi04Zj9VCs4nNpeCYZGpQM7Do0KIIFNxCIFFhYjAvBhECgFRmSSiA9Gg3ney5/TmZgo3Y7R2ZVlm0ox5ydvTUNHERgrQir/AMcrOXhyKPEuTvKTkPMz9GZ1TVLYtP8AVVu/5Ure40tjYd/ql/cvoIU8WuQ/RrxY0mf4LrGp+h1tgQteMpLrZox8bsirHTtrnHXyPUwlyYOo88svkHWM0ubY8DUg9M7i8oPkezx2FhPNrPg+K8TCxOzpLjlzs7+P1I3KrBlEHKA9icO0+fQXlBoVi1iJRD2KziYSNaIvOI5WQvNZHTjxz69ZuJiLU0NYhC9NG2OR4xIkgkURJEFArHE7pwOWLSLYb4isicP8R6OvEHptnaGzHQxdnvQ2oaERRJAZIYkBkhdeNClWItOI7UQtNHLp0RNJD1ITpIcpmjUzELECgsRiroNEHFIZhTWr/c0nPgW8Jo0b3csorNtg6u0I37CstFxf+RfaWMv2I5RWb72I0pWDbx1FMZ57rUjUbzfqGjIToSGYjRbqCwG8PMWhILRkGF1WrRqMLv37zOo1PvwGYzVrjpWdorPiugu3zWpM55lZyuTtUk6L4nCqSstOWZg4vBbry8v3PSRdtcymLw0ZwbS06m4+yWv9a8julZIer0bMVqxJWcUeSFZC81kN1kLTR1Y8Q16zMSgNNDGJQKkhdjkaKKtBUgbRGqB2OLWOFYjImhqRImjqelrxzx6TZzNqnoYWz5aG1TeRCHEYORdsFJmoQKogE0MVAUjk2vlWmN0xaCGYAyNMIJEEHgOUaEcrgcViWm1oExM91GQ6l22x+PrCz/arF4IXhPMPTEdOTMJMZpzYtBaajVKAZTGKb7xi3Ji0EMqPIctdCbCqo+ZXdJsYqd/nc6csism/vQrKYtNFt4NQrWuhJyzOlLNd+XebN7J8meYVx9r5fLhwszJqo0sVJt24+jvxQnVzQNztKXpm1kL1ENV0K1NC+PE9es3EgqSDYgpSQvyDkVIpJBSk0QqgVjiTgCz2dT1OZENT0deOaN/AM26UjBwDNqk8iE9ONJlSGzkGhESBMvOQGcjn3Fs3heAxAThIbpsWQbTUI3DxBU2hhNBkLWZtHEaLiIwep21p2mr9/wAgODbaz42Y9bHpqkrsep0mKfmKKyWZeO0ba27/ALsLItNHo2QzTqmM9r09HZd/APRxUZZxaDIeWVsxmvUP+YlbvuY2GxN21yDTr2az0Xuhmsa8aqvqHi0zz89p04fEyP8Ae4t5St8jcwlj0E6fEUnKzEcNtKTeV2umXmx9zjNXQt/pp0XnIHVnZJ96JkhTFy7IM3sdf8QMRiG+vDo87Ezimk073z/YzJ1Xdc72b6afJDuBqxlFpfv1Q2nPCtdC9QbxMbClUtnxPXrLxJFJFsTqRRJ/IfArRVouyrI1SAnHHAFnM6nqRI6nqejrxzT1tYFmzSkYeCZsU3kc/PahhyIuCbOTGpYmbATDsFOBHVPIrTY7SYpCI7h4N6CcjwZpsZjTbV+BNLCS1y9w81ZWGkC15f8AENB7t0IYCs1Htpp2Vu9WyaR6LadJSTT0sZH+gpxnTk45qVOzu9N9LS9uIZ31Wz13ERW8lJyyd+zHRK/PW/kWk6CS3nbrKXuy20IycmotK/Hl3ia2ck95tt827/sGSKTnh1SWEk7KbTeebnZvW3XtNlISoRjFLecmpptTaSl+lrmuafg0WpYShCSclfq2+FhbF0IRjeN7Xyu9GU646Di+09syrDjv3vnuqcrP+niG2huuSUG72bd95NLLVS0efHvHfwfR/wCmpWznKU3l/FJtJ+FiNu01GtvKK7VN92cJb2duCjvvyEk5VtsyxYUYXvJvLm28+jY5hp0I2WSu+TtcXq01rmt7O6yfenyLQ2bGc4yU5RcbWcXu5rR6ahknPdJZZ5HqsHOk4OSed7JRfz7vqUxOIku0rbq+NKyyv8a4Zce5X65WG2M4ZwnK/N6NLS+Rp07OElOLvuyT03GrZtc1Z8ja48aS+urbRpQspTjvPRavlos9UzM2hipv4ISeTzknFctJZ8eRo4bDwjCMowhBuMW9yCV3uq7ckkEhSvnzT81mvcnOOeh1zx28fu1FnOSve/cnxNPZ9Ttp31WVtAOOw+uXFk4aNtxPVfJmtHXxyZ5P4t+YnWHsUtBGsXzenJr1l4jU6kiK+pemS+Q+F2iJF5IqyVUgFzjmiBR4ZrOgdI6B6W/HLPWrhGakJGThmaUJHJz2r+DuRMZAd4mMhrWMpklYssQ1VMxMUNUYW0a9xRB4CyjY1YV8u8tOq+glSXEtOTK8p8B4mV9epmTvJu2uVm80ms0/NDeMvay1YpGVr+XoDk+Z2POnkpPNSV+avxUu9feoCWFg/wBKLQlfRtX5PXqtH4hFTm9Zp/0RX/FIeWLTNkDWFhHRfQUx8FNqF1mrtfy6Pz08XyL42soq2/JvklFetrrzKYWjBQ33nKVpPO78W9TVuOXp9gULRS0yLbTwSl+rdlF70Za2a0uuK7gez8UlbMYq14Slmw9cGs7Yipp3eVr2lHVRf8LfFZNp8V33SvS2dBvl0FdrwcKinC6TXa3W07Xz04fQLga6l/5JLutBr/jc3QTNa+HwMIZ9q/8A7O3lctiZ7y3MryVuTUXk5+Cvbm8isW2s6sn0UIf/AFGKl6kUbLJcc29W3zb1b6m1w2c2+jVYapaPNW0t05iuIbjF2/hdvv74j0FddNAU6alfvy63+7eJKehph/l3iri2GW/Jvvy6cBra9VUoN/ql2YrrxAbOj2UxqHy654hvEZL0M6sN4iV2J1i2ZxHHr1m1nmXp6A6uoSmS+RTPgrKMuyjJU8AbIOZwBZkiaZWRNM9Hfjmz60sMaMGZ2GH4nJfVfxdstBlCYhaGoBQEGHRHSkcgkGDuSmLGpqE7F51OQvBl4sfknAUFvJyfRfsJ11b7y8DUUVoZWNh9+YT56oEajRFTFytbjwXqW/Lu7L/BeNKEG5ylbToks/nZ+CHyrd8QmsLJ9qWbflYrVhOOja+XI0P9xouaW8k3ZJeOfsv8EY6UHBycs8u/NvRLzGsT+1pKlj2rWl8/EYhTq1Jb0ZyS5LK3XixeeFWTTTyV+WmZs7NmoSUW1azfclZNZ8LN/dgG+1kNf6OSh2u02tefQ87iYOnO+ib8OqPbTxdNJXasr/P9jFxUKc7ptNSvmtLpZ9NH5oNhZ8tKYXGvnccjijGw+FcJ7r6p8LPgaX5bWXP0F10tN8xrYPE3uOxXHmn1MejHd4+K7rB9qYvcoSzcW+ynyk72z6pgzO0t3p578RPfxCindRSt1epo4drcVjzmzW5zu3d63fkejhC0TfqerzbQqqsLVmGnqL13kdE8QrPqahKYKeoSBD5FciyZVsllZEjgtnFWzgAzZE0ykmWpno78Qz60sMPQM/DM0IM4/wBW/BDolSUMUzEOmLxDRZHSuViUypKYsaiQYVC8WGQ9KLBiuMhz0s35L6hos6vC6y1+hs3tv7Z9Cm29OH0+oLGJOGff7L6+g1CdpW0XZ9r+auhOpU7TSWjatwyfH74FZODfbmMzFbJhNXevBlsJhXCG5ODkk42cVdqOjvzVvka1OLtb/BMZ2Nzz0pJm+lYYanu333F3s07p/Fya5cSa1Gkk1CTnLdbSjdreV7LeWUcx+FdJvLPjl4e41RxcVpGPkvQP/o/X+3nsTs2pKyhHdWWcn2sly6/IPhtjzpxvOcpvvejetvBehuxnd3uA2lWSSXf9fMH2/IGs5iMNTeW9m03d872fzuNO2vcvW6M/DYhKMc1m8++/2i6rXVunz09ULSy9HISTUrLP1u3/AIAfiNOVNQjq5X+bXTX0Iwk2lvPm7317vYLSk5Nt53dwlvfLL2ds7cSvrqaVTQPJC9UX9J+E56i9cPJitdnTEaRlqFgBk8w0CHyeq58EZSRZlZkjl5EESZxgZsi1Moy1I9DfiGWjhh+DM/Dj8Gcf6t+CExKlojFMUwsGBpsLEjpTKzZCkVmRcGRo8WFiwEGXixqUdMlMGmXQGY21ZODtwkvbXzIw1WKhObzlN2irZ53a8XmNbZhGUNVvLNZ5/ehhUa3NOylJrra3pf1LZvJL016U7Rzeba6JJcOfDxSGIUW7ZWb0XFLx7s/IVwPakot6adz6dHlfn4GnDOe6m22n2uNrpWT/AKvTpbXJ86cqSvlmnv587Wt7omGDSzemXje/u/uxNOrwtnZx0Wibs+mayDVsTvb3Ddd/CTTiut7+JvqbkCdXd8fDk2ZmMqXTb1Um1yTtmvHsjGPkk7X/AJlnrkm0v7r9DKxVey1ds2r6/Fp5K/k+JpOG1rnwOlXtNxz1aXn817Gthp5Sfgvb5+p5mnX3pN6b3H528uuZs4BylHPnfr95eRiTm9NOM8revP7uxzDJ2y438xONkO0JWfRE7V5nohhtq71SVKatJaPgxqqeM2vtT/u3OGkGkuTtkzfwW14VVZ2jLlzKXF5ljmmp3kaTFq7GJsVxDLTxP9JPUNAXvmMQOffquVys2WZSRNQszirOMVnMvSBsvTO/fiEaGHY9BmfQY7BnL+rGCYg1IspBKZgwqYvBhYsltTK0mVUjpsFvpasGRpiDC7xl4jadOHG55/H7cnPJOyK5+PWktbkeoxW2KUNZXfJHn8d+JaksoZLmedqV3Lj9QUp24lc/FmJXeqfq46bd5Tbaz1NmDc4Qmlk1nbnx+R5LePUfhnFpwdN6xd10Yd9TmD8fd4rVweKtPeXBZLln9+pt4fEJPetwhk9bN393l3mHPCq915eoZ4prdvZNPhxSyt5XXgJLypZY06NdQnZvKKX7+rivADOs4ytfsTuui0WvVO3MzKuJzunluq/F5PkUxOIcoKEHpfe5dq1rPnaIa05ExmOU5Xu+y0r63Ube0beD5mbjYudnn2r5crXSRaFCUnnouHC9vvzG40Vos3z9/USmmaSwOBbavz9vY9FShZKwPDUt1BW+QtXzngxB8fAyPxBtlUYOEH25qy/lT4gdsbdhSTis58EtF3s8PiMROc3KTu282PjHN5viXzfL9Z9c+jRk2xulVas07NZidNWCxfE6eHFy9LhNtq1qn9y08R6dWMleLTR5CMg1KtKPwu3yB9f4Ga/l6C+YaDMrDbQi/jyfPgakGcvySyujFlnQlykmWbBzZFUvJklJM4JWe2WhIHJlIyO/U6c8aVCY9TkZFGZoUZnNZ2rKcTJTBKZaMjMahIXxO0oQy1YPE4pQi7s8riMW7vMOfj+3oa3x1G3iNsSfcZtfaUnxZlzrtlPzC2cSeRG61faPVrSYpJy5Mu6pX818xwUbkQyzmwbAyUwmGxUqc1OLzXk+aYG5EjWDOn0HZm0oVoKSefGL1T+geUU9T5xh8ROEt6EmmuX3mehwn4n4VI2f8Uc15Eb8dl6Xz8kvr0Dw8VnbUtCiuBmw23RlpNeOT9S09sUl+uPmheKfnLSvb5BqcUs3qedn+IaMdG5PuT9xDFfiao8oRUe95vwWiD9bR/yZy9fXxkIK8pJLyueb2n+Jm7xpZfzvXwR5yviak3ecnJ95SEGPn45PUtfNb1OhJTcndttvVvUJCNisIl0/IqgumXcilzjMIpl1MAcpGKcjMZw+KnDOL8HoZqmXjPvBZL6Mtnj0WG2jCWUuy/TwY3N5HllMbw+MlDK91yfsyGvh/crZ+b/s1JM4U/10O/yOJf49fwp9s/yXkyEiTjt0jBqY9SZxxHR4YiytesoxcuRxwk9G+PM43HSkxCcyDjoiCm8Ucjjgs7eO3jjjM7eO3jjgMjeOuccFlWQ0ccAUOJ24ccZkqBZQOOCCysXjmccZk7xeLIOCyVItck4zKuR1zjgMlMsmccYF1NhIzOOMAm+cccZn/9k=" alt="java father">
+       <div class ="java-father-text">  <!--m2-->
+           <div class ="java-father-text__theFirst"> <!--m0-->
+               <p>James Arthur Gosling (sinh ngày 19 tháng 5 năm 1955 gần Calgary, Alberta, Canada) là một nhà phát triển phần mềm nổi tiếng. Ông là cha đẻ của ngôn ngữ lập trình Java</p>
+           </div>   <!--d0-->
+           <div class="java-father-text__theSecond">  <!--m1-->
+               <p>Từ năm 1984, James Gosling đã vào làm việc tại Sun Microsystems. Năm 2005 ông là CTO của nhóm phát triển sản phẩm. Sau thương vụ mua Sun Microsystems của Oracle vào ngày 21 tháng 1 năm 2010, James Gosling chính thức rời Oracle vào 2 tháng 4 năm 2010.
+                   Ngày 28 tháng 3 năm 2011, ông tuyên bố trên blog cá nhân rằng ông đã gia nhập Google.</p>
+               <p>Nói chung ông được xem như là nhà phát minh của ngôn ngữ lập trình Java vào năm 1994. Ông đã thiết kế gốc của Java và đã cài đặt trình biên dịch và máy ảo gốc của nó. Với thành tựu này ông đã được bầu vào Hiệp hội Kỹ sư Quốc gia (National Academy of Engineering) của Hoa Kỳ.</p>
+               <p>Ông cũng có những đóng góp lớn vào nhiều hệ phần mềm khác như NeWS và Gosling Emacs. Và ông cũng được công nhận như là tác giả công cụ biên tập WYSIWYG.
+
+                   Ông còn đóng góp nhiều thành tựu khác (ít được biết và do ông tham gia các nhóm làm dự án này):</p>
+               <p>- Chương trình quản lý các cửa sổ</p>
+               <p>- Hệ thống mail</p>
+               <p>- Phiên bản đa lõi cho máy chủ Unix</p>
+                        
+     </div>          <!--d1-->
+     
+   </div>        <!--d2-->
+ 
 </div>            <!--d3-->
 
-<div class="music"> 
-    <h4 style=" color: cadetblue ;margin-top: 0;margin-left: 50px; font-size: 20px;">relax playlist</h4>            <!--m5-->
-   <ul>
-    <li style="color:rgb(221, 204, 228) ;" class="relaxPlaylistAll" >Bình yên thư giãn nhẹ nhàng</li>
-    <li  style="color:rgb(221, 204, 228);" class="relaxPlaylistAll" >nhac năng động</li>
-    <li  style="color:rgb(221, 204, 228);"  class="relaxPlaylistAll">Nhạc Không Lời Nhẹ Nhàng Thư Giãn</li>
-    <li  style="color:rgb(221, 204, 228);" class="relaxPlaylistAll" >Nhạc Nhẹ Nhàng Không Lời Thư Giãn</li>
-    <li  style="color:rgb(221, 204, 228);" class="relaxPlaylistAll">  Nhạc Nhẹ Nhàng Không Lời Thư Giãn 2</li>
-   </ul>
+<!-- <div class="music"> 
+   <h4 style=" color: cadetblue ;margin-top: 0;margin-left: 50px; font-size: 20px;">relax playlist</h4>           
+  <ul>
+   <li style="color:rgb(221, 204, 228) ;" class="relaxPlaylistAll" >Bình yên thư giãn nhẹ nhàng</li>
+   <li  style="color:rgb(221, 204, 228);" class="relaxPlaylistAll" >nhac năng động</li>
+   <li  style="color:rgb(221, 204, 228);"  class="relaxPlaylistAll">Nhạc Không Lời Nhẹ Nhàng Thư Giãn</li>
+   <li  style="color:rgb(221, 204, 228);" class="relaxPlaylistAll" >Nhạc Nhẹ Nhàng Không Lời Thư Giãn</li>
+   <li  style="color:rgb(221, 204, 228);" class="relaxPlaylistAll">  Nhạc Nhẹ Nhàng Không Lời Thư Giãn 2</li>
+  </ul>
+  -->
+  <!-- <h4 style="margin-top: 0;margin-left: 50px; font-size: 20px;"> opbeat playlist </h4> -->
   
-   <!-- <h4 style="margin-top: 0;margin-left: 50px; font-size: 20px;"> opbeat playlist </h4> -->
-   
-   <!-- <ul>
-        <li class="upbeatPlaylistAll"> nhạc giai điệu vui tươi cho bạn 1</li>
-        <li  class="upbeatPlaylistAll">nhạc giai điệu vui tươi cho bạn 2</li>
-        <li  class="upbeatPlaylistAll" > nhac giai điệu vui tuoi cho bạn 3</li>
-        <li  class="upbeatPlaylistAll"> nhạc năng động</li>
-        <li  class="upbeatPlaylistAll"> nhạc việt =))</li>
-   
-    </ul> -->
-   
-    <div style="display:inline-flex">
-        <h4 class="hideVideo" style="color: orangered; ;margin-top: 0;margin-left: 10px; font-size: 14px;"> hide video </h4>
-        <!-- <h4 style="margin-top: 0;margin-left: 10px; font-size: 14px;"> show video  </h4> -->
-      
-     </div>
-    <p style="color:rgb(204, 156, 23) ;">note: chỉ bật 1 video nhé. nếu muón đổi nhạc thì reload lại trang :></p>
-</div>                <!--d5-->
-
- <div class="musicCard">
-    <iframe class="relaxPlaylist1 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/FjHGZj2IjBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe  class = "relaxPlaylist2 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/D1iLQpNjjUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe  class = "relaxPlaylist3 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/Eag3k9p4pr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class = "relaxPlaylist4 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/HSOtku1j600" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class = "relaxPlaylist5 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/4P0R9dUJ370" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    <!-- <iframe  class = "upbeatPlaylist1 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/Eag3k9p4pr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe  class = "upbeatPlaylist2 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/h9yLFu8BZts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe  class = "upbeatPlaylist3 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/D1iLQpNjjUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe  class = "upbeatPlaylist4 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/k2jON6ZHU_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe  class = "upbeatPlaylist5 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/Q2niQtzX_-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
-
-
-</div>
-
-    </div>
-   
+  <!-- <ul>
+       <li class="upbeatPlaylistAll"> nhạc giai điệu vui tươi cho bạn 1</li>
+       <li  class="upbeatPlaylistAll">nhạc giai điệu vui tươi cho bạn 2</li>
+       <li  class="upbeatPlaylistAll" > nhac giai điệu vui tuoi cho bạn 3</li>
+       <li  class="upbeatPlaylistAll"> nhạc năng động</li>
+       <li  class="upbeatPlaylistAll"> nhạc việt =))</li>
+  
+   </ul> -->
+  
+   <!-- <div style="display:inline-flex">
+       <h4 class="hideVideo" style="color: orangered; ;margin-top: 0;margin-left: 10px; font-size: 14px;"> hide video </h4>
+       <h4 style="margin-top: 0;margin-left: 10px; font-size: 14px;"> show video  </h4>
      
- <!-- js father -->
- <div style=" border-top: 2px solid darkgray ;width: 56%; height:50px;background-color:black; margin-left: 27%;"><h1 style="color: rgb(196, 200, 209); margin-left: 30%;">javascript Father</h1></div>
- <div class ="js-father" >    <!--m3-->
-    <img class ="img__jsFather" src="http://prod-upp-image-read.ft.com/2370cb1e-4dc2-11e4-9683-00144feab7de" alt="js father">
-    <div class ="js-father-text">  <!--m2-->
-        <div class ="js-father-text__theFirst"> <!--m0-->
-            <p>Brendan Eich  sinh ngày 4 tháng 7 năm 1961 là một nhà công nghệ người Mỹ và là cha đẻ của ngôn ngữ lập trình JavaScript. Ông ta cũng là người đồng sáng lập của dự án Mozilla, Mozilla Foundation và Mozilla Corporation, và từng là giám đốc công nghệ của Mozilla Corporation và là giám đốc điều hành trong một thời gian ngắn. Ông ta là CEO của Brave Software</p>
-        </div>   <!--d0-->
-        <div class="js-father-text__theSecond">  <!--m1-->
-            <p>Eric bắt đầu sự nghiệp của mình tại Silicon Graphics và làm vè mảng hệ điều hành, mã mạng trong suốt 7 năm.</p>
-            <p>Sau đó ông lại làm việc 3 năm tại MicroUnity System Engineering, thực hiện viết mã microkernel và DSP, cổng MIPS R4000 đầu tiên của GCC.</p>
-            <p>Năm 1995 ông vào làm việc tại Netscape Communications Corporation, tham dự định đuewa Scheme vào trình duyệt.
+    </div> -->
+   <!-- <p style="color:rgb(204, 156, 23) ;">note: chỉ bật 1 video nhé. nếu muón đổi nhạc thì reload lại trang :></p> -->
+<!-- </div>                d5 -->
 
-                Và cũng chính từ đây, ngôn ngữ lập trình javascript được ra đời. Ban đầu có tên là Mocha, sau đó đổi tên là LiveScript và cuối cùng là JavaScript.</p>
-            <p>Đầu năm 1998 xây dựng lên trang web: Mozilla.org.</p>
-            <p>Erich cũng là CEO của Brave Software và cũng là người sáng lập của Basic Attention Token.</p>
-            
-                     
-  </div>          <!--d1-->
+<!-- <div class="musicCard">
+   <iframe class="relaxPlaylist1 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/FjHGZj2IjBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe  class = "relaxPlaylist2 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/D1iLQpNjjUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe  class = "relaxPlaylist3 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/Eag3k9p4pr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe class = "relaxPlaylist4 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/HSOtku1j600" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe class = "relaxPlaylist5 turnOff video" width="230" height="230" src="https://www.youtube.com/embed/4P0R9dUJ370" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    -->
+   <!-- <iframe  class = "upbeatPlaylist1 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/Eag3k9p4pr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe  class = "upbeatPlaylist2 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/h9yLFu8BZts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe  class = "upbeatPlaylist3 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/D1iLQpNjjUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe  class = "upbeatPlaylist4 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/k2jON6ZHU_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe  class = "upbeatPlaylist5 turnOff turn on" width="230" height="230" src="https://www.youtube.com/embed/Q2niQtzX_-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
+
+
+<!-- </div> -->
+
+   <!-- </div> -->
   
+    
+<!-- js father -->
+<div style=" border-top: 2px solid darkgray ;margin-left: 5% ;width: 90%; height:50px;background-color:black;  margin-top: 330px;"><h1 style="color: rgb(238, 241, 245); margin-left: 45%;">JavaScript Father</h1></div>
+<div class ="js-father" >    <!--m3--> 
+   
+   <img class ="img__jsFather" src="http://prod-upp-image-read.ft.com/2370cb1e-4dc2-11e4-9683-00144feab7de" alt="js father">
+   <div class ="js-father-text">  <!--m2-->
+       <div class ="js-father-text__theFirst"> <!--m0-->
+           <p>Brendan Eich  sinh ngày 4 tháng 7 năm 1961 là một nhà công nghệ người Mỹ và là cha đẻ của ngôn ngữ lập trình JavaScript. Ông ta cũng là người đồng sáng lập của dự án Mozilla, Mozilla Foundation và Mozilla Corporation, và từng là giám đốc công nghệ của Mozilla Corporation và là giám đốc điều hành trong một thời gian ngắn. Ông ta là CEO của Brave Software</p>
+       </div>   <!--d0-->
+       <div class="js-father-text__theSecond">  <!--m1-->
+           <p>Eric bắt đầu sự nghiệp của mình tại Silicon Graphics và làm vè mảng hệ điều hành, mã mạng trong suốt 7 năm.</p>
+           <p>Sau đó ông lại làm việc 3 năm tại MicroUnity System Engineering, thực hiện viết mã microkernel và DSP, cổng MIPS R4000 đầu tiên của GCC.</p>
+           <p>Năm 1995 ông vào làm việc tại Netscape Communications Corporation, tham dự định đuewa Scheme vào trình duyệt.
+
+               Và cũng chính từ đây, ngôn ngữ lập trình javascript được ra đời. Ban đầu có tên là Mocha, sau đó đổi tên là LiveScript và cuối cùng là JavaScript.</p>
+           <p>Đầu năm 1998 xây dựng lên trang web: Mozilla.org.</p>
+           <p>Erich cũng là CEO của Brave Software và cũng là người sáng lập của Basic Attention Token.</p>
+           
+                    
+ </div>          <!--d1-->
+ 
 </div>        <!--d2-->
 
 </div>            <!--d3-->
-  
+ 
 
-  <!-- sign in -->
-  <div class = "boxSI">
-    <div class = "boxSI-align">
-        <label class = "boxSI-label" for="Name" > Name</label>
-        <label class= "notification" for="notification">wrong account</label>
-        <input id="Name" class = "input"  type="text" > 
+ <!-- sign in -->
+ <div class = "boxSI">
+   <div class = "boxSI-align">
+       <label class = "boxSI-label" for="Name" > Name</label>
+       <label class= "notification" for="notification">wrong account</label>
+       <input id="Name" class = "input"  type="text" > 
+       <br>
+      
+       
+        <label class = "boxSI-label"for="Password">Password</label>
+        <label class= "notification" for="notification">wrong Password</label>
+        <input id ="Password" class = "input" type="text">   
+      
         <br>
+          <div class ="align">
+            <button id ="button__submit">Submit</button>
+            <br/>
        
-        
-         <label class = "boxSI-label"for="Password">Password</label>
-         <label class= "notification" for="notification">wrong Password</label>
-         <input id ="Password" class = "input" type="text">   
-       
+          <button id="next" style="margin-left: 10px;"><a class="next"  href="./Webcontent.html"> next</a></button>
+          </div>
+          <br>   
+          <div class="align">
+           <!-- <h1 class = "next" href="./signUp.html"> sign Up</h1> -->
+
+           <br>
+             <a class ="next" href="./index.html"> home page</a>
+
+            
+          </div>                   
+   </div>
+ </div>
+   <!-- SIGN UP-->
+
+   <div class ="boxSU">
+     
+       <div class="alignment">
+         <label class = "describe" for="userName"> User Name</label>
+         <br/>
+         <label class = "notificationSU" for="account already exist" > account already exist</label>
          <br>
-           <div class ="align">
-             <button id ="button__submit">Submit</button>
-             <br/>
-        
-           <button id="next" style="margin-left: 10px;"><a class="next"  href="./Webcontent.html"> next</a></button>
-           </div>
-           <br>   
-           <div class="align">
-            <!-- <h1 class = "next" href="./signUp.html"> sign Up</h1> -->
+         <input class="inputSU" type="text">
+         <br>
+         <label class="describe" for="Password"> Password</label>
+         <br>
+         <label class="notificationSU" for="notification"> invalid Pasword</label>
+         <br>
+         <input class = "inputSU" type="text"> 
+         <br>
+         <label class = "describe" for="notification">enter the password</label>
+         <br>
+         <label class= "notificationSU" for="notification">password incorrect</label>
+         <br>
+         <input class="inputSU" type="text">
+         <br>
+         <br>
+         <label class = "displayResult" for="notification">create account success</label>
+         <button class="create" > register</button>
+         <br>
+         
+         <!-- <button class ="nextSU"> <a href="./signIn.html"> sign In</a></button> -->
+         <a class ="next" href="./index.html"> home page</a>
 
-            <br>
-              <a class ="next" href="./index.html"> home page</a>
-
-             
-           </div>                   
-    </div>
-  </div>
-    <!-- SIGN UP-->
-
-    <div class ="boxSU">
-      
-        <div class="alignment">
-          <label class = "describe" for="userName"> User Name</label>
-          <br/>
-          <label class = "notificationSU" for="account already exist" > account already exist</label>
-          <br>
-          <input class="inputSU" type="text">
-          <br>
-          <label class="describe" for="Password"> Password</label>
-          <br>
-          <label class="notificationSU" for="notification"> invalid Pasword</label>
-          <br>
-          <input class = "inputSU" type="text"> 
-          <br>
-          <label class = "describe" for="notification">enter the password</label>
-          <br>
-          <label class= "notificationSU" for="notification">password incorrect</label>
-          <br>
-          <input class="inputSU" type="text">
-          <br>
-          <br>
-          <label class = "displayResult" for="notification">create account success</label>
-          <button class="create" > register</button>
-          <br>
-          
-          <!-- <button class ="nextSU"> <a href="./signIn.html"> sign In</a></button> -->
-          <a class ="next" href="./index.html"> home page</a>
-
-        </div>
-      
-      
-    
+       </div>
+     
+     
+   
 </div>
 
-</body>
-<script>
-       
-    //    var API = "http://localhost:5500";
 
-       //-----------------------------------------------
-         var b = document.querySelector('#Name');
-           var Password= document.querySelector('#Password');
-            var submit= document.querySelector('#button__submit');
-           var handleResult = document.querySelector('#next');
-            var notification = document.querySelectorAll('.notification')
-           var box__item = document.querySelectorAll('.box__item')
-            var boxSI = document.querySelector('.boxSI')
-           // var next = document.querySelectorAll('.next')
-           var boxSU = document.querySelector('.boxSU')
+    <script>
        
-         console.log(box__item[6])
-         
-       
-           // sign in link thu 5
-          box__item[6].onclick = () => {
-            console.log('SI')
-             boxSI.style.display="block"
-           }
-        
-         
-        
-          box__item[7].onclick = () => {
-            console.log('su')
-             boxSU.style.display="block"
-           }
-       
-           //  next[0].onclick = () => {
-           //   box.style.display = "none";
-           //   boxSU.style.display =  "block";
-           //  }
-       
-           var name = "";
-                b.onkeyup =(e) =>{
-                   name=e.target.value;
+        //    var API = "http://localhost:5500";
+    
+           //-----------------------------------------------
+             var b = document.querySelector('#Name');
+               var Password= document.querySelector('#Password');
+                var submit= document.querySelector('#button__submit');
+               var handleResult = document.querySelector('#next');
+                var notification = document.querySelectorAll('.notification')
+               var box__item = document.querySelectorAll('.box__item')
+                var boxSI = document.querySelector('.boxSI')
+               // var next = document.querySelectorAll('.next')
+               var boxSU = document.querySelector('.boxSU')
+           
+             console.log(box__item[6])
+             
+           
+               // sign in link thu 5
+              box__item[6].onclick = () => {
+                console.log('SI')
+                 boxSI.style.display="block"
                }
-       
-               var password ="";
-               Password.onkeyup = (e) =>{      
-               password = e.target.value
+            
+             
+            
+              box__item[7].onclick = () => {
+                console.log('su')
+                 boxSU.style.display="block"
                }
-               
-                //  function start () {
-                //    getInfo(handleInfo);
-                //  }
-       
-       
-                //  function getInfo(callback){
-                //    fetch(API)
-                //    .then ((info) => {
-                //           return info.json(''); 
-                //    })
-                //    .then(callback)
-                //    .catch(() =>{
-                //        return 'error'
-                //    })
-                //  }
-       
-       
-       
-              
-                //  function handleInfo(data) {
-                //    for (var i = 0; i < data.length; i++) {
-                //      console.log(data[i].name)
-                //      console.log(data[i].Password)
-                //        if (name == data[i].name && password == data[i].Password){
-                           
-                //            handleResult.style.display = 'block';
-                //            return;
-                //        }
-                //    }
-       
-                //    //wrong account or wrong Password
-                //    notification[0].style.display="block";
-                //    notification[1].style.display="block";
-       
-                //  }
-                 
-       
-                //  //Submit
-                //  submit.onclick = (e) =>{
-                //    start();
-                //  }
-       
-       
-       
-                 //js sign up 
-                  
-          
-       
-                 var inputElement = document.querySelectorAll('.inputSU');
-                   var displayResult = document.querySelectorAll('.nextSU')
-                   var notificationSU = document.querySelectorAll('.notificationSU')
-                   var create = document.querySelector('.create')
-                
-          
-                   //Dom event
-                   var NameSU;
-                   inputElement[0].onkeyup= (e)=>{
-                       
-                       nameSU = e.target.value;
-                       console.log(nameSU)
+           
+               //  next[0].onclick = () => {
+               //   box.style.display = "none";
+               //   boxSU.style.display =  "block";
+               //  }
+           
+               var name = "";
+                    b.onkeyup =(e) =>{
+                       name=e.target.value;
                    }
-       
-                   var PasswordSU;
-                   inputElement[1].onkeyup = (e) =>{
-                       
-                       PasswordSU = e.target.value;
-                    console.log(PasswordSU)    
+           
+                   var password ="";
+                   Password.onkeyup = (e) =>{      
+                   password = e.target.value
                    }
                    
-                   var again_Password;
-                   inputElement[2].onkeyup = (e) => {
-       
-                       again_Password = e.target.value
-                       console.log(again_Password)
-                   }
+                    //  function start () {
+                    //    getInfo(handleInfo);
+                    //  }
+           
+           
+                    //  function getInfo(callback){
+                    //    fetch(API)
+                    //    .then ((info) => {
+                    //           return info.json(''); 
+                    //    })
+                    //    .then(callback)
+                    //    .catch(() =>{
+                    //        return 'error'
+                    //    })
+                    //  }
+           
+           
+           
                   
-       
-               
-                //    //port accouont
-                //    function createAccount(data) {
+                    //  function handleInfo(data) {
+                    //    for (var i = 0; i < data.length; i++) {
+                    //      console.log(data[i].name)
+                    //      console.log(data[i].Password)
+                    //        if (name == data[i].name && password == data[i].Password){
+                               
+                    //            handleResult.style.display = 'block';
+                    //            return;
+                    //        }
+                    //    }
+           
+                    //    //wrong account or wrong Password
+                    //    notification[0].style.display="block";
+                    //    notification[1].style.display="block";
+           
+                    //  }
+                     
+           
+                    //  //Submit
+                    //  submit.onclick = (e) =>{
+                    //    start();
+                    //  }
+           
+           
+           
+                     //js sign up 
+                      
+              
+           
+                     var inputElement = document.querySelectorAll('.inputSU');
+                       var displayResult = document.querySelectorAll('.nextSU')
+                       var notificationSU = document.querySelectorAll('.notificationSU')
+                       var create = document.querySelector('.create')
                     
-                //        fetch(API,{
-                //            method: 'POST',
-                //            headers: {
-                //                'content-Type': 'application/json'
-                //            },
-                //            body: JSON.stringify(data)
-                //        })
-                //         .then((a) => {
-                //            console.log(a)
-                //            // displayResult[0].style.display = 'block';
-                //            // displayResult[1].style.display = 'block';
-                //         })
-                //         .catch(() => {
-                //            notification[0].style.display = "block";
+              
+                       //Dom event
+                       var NameSU;
+                       inputElement[0].onkeyup= (e)=>{
                            
-                //            notification[1].style.display = "block";
+                           nameSU = e.target.value;
+                           console.log(nameSU)
+                       }
+           
+                       var PasswordSU;
+                       inputElement[1].onkeyup = (e) =>{
                            
-                //            notification[2].style.display = "block";
-                //         })
-                //    }
-       
-                //    //dom event
-                //    var idSU = 4;  
-                //    create.onclick = () =>{
-                //      console.log(PasswordSU,again_Password)
-                //        if (PasswordSU !==again_Password) {
-                //        notificationSU[1].style.displ="block"
-                //        notificationSU[2].style.display = "block";
-                //          return;
-                //    }
-       
-                //        idSU++;
-                //        var Formdata = {
-                //            id: idSU,
-                //            nameSU,
-                //            PasswordSU
-                //        }
-                //        // console.log(Formdata)
-                //        createAccount(Formdata)
-                //    }
-
-    //-------------------------------------------------------------------------------------------------
-    var box__item = document.querySelectorAll('.box__item');
-    var signOut = document.querySelector('.signOut')
-    var signOut__No = document.querySelector('.signOut__No');
-  
-    var relaxPlaylistAll = document.querySelectorAll('.relaxPlaylistAll')
+                           PasswordSU = e.target.value;
+                        console.log(PasswordSU)    
+                       }
+                       
+                       var again_Password;
+                       inputElement[2].onkeyup = (e) => {
+           
+                           again_Password = e.target.value
+                           console.log(again_Password)
+                       }
+                      
+           
+                   
+                    //    //port accouont
+                    //    function createAccount(data) {
+                        
+                    //        fetch(API,{
+                    //            method: 'POST',
+                    //            headers: {
+                    //                'content-Type': 'application/json'
+                    //            },
+                    //            body: JSON.stringify(data)
+                    //        })
+                    //         .then((a) => {
+                    //            console.log(a)
+                    //            // displayResult[0].style.display = 'block';
+                    //            // displayResult[1].style.display = 'block';
+                    //         })
+                    //         .catch(() => {
+                    //            notification[0].style.display = "block";
+                               
+                    //            notification[1].style.display = "block";
+                               
+                    //            notification[2].style.display = "block";
+                    //         })
+                    //    }
+           
+                    //    //dom event
+                    //    var idSU = 4;  
+                    //    create.onclick = () =>{
+                    //      console.log(PasswordSU,again_Password)
+                    //        if (PasswordSU !==again_Password) {
+                    //        notificationSU[1].style.displ="block"
+                    //        notificationSU[2].style.display = "block";
+                    //          return;
+                    //    }
+           
+                    //        idSU++;
+                    //        var Formdata = {
+                    //            id: idSU,
+                    //            nameSU,
+                    //            PasswordSU
+                    //        }
+                    //        // console.log(Formdata)
+                    //        createAccount(Formdata)
+                    //    }
     
-    var upbeatPlaylistAll = document.querySelectorAll('.upbeatPlaylistAll')
-
-
-    var relaxPlaylist1 = document.querySelector('.relaxPlaylist1')
-    var relaxPlaylist2 = document.querySelector('.relaxPlaylist2')
-    var relaxPlaylist3 = document.querySelector('.relaxPlaylist3')
-    var relaxPlaylist4 = document.querySelector('.relaxPlaylist4')
-    var relaxPlaylist5 = document.querySelector('.relaxPlaylist5')
-
-    // var upbeatPlaylist1 = document.querySelector('.upbratPlaylist1')
-    // var upbeatPlaylist2 = document.querySelector('.upbratPlaylist2')
-    // var upbeatPlaylist3 = document.querySelector('.upbratPlaylist3')
-    // var upbeatPlaylist4 = document.querySelector('.upbratPlaylist4')
-    // var upbeatPlaylist5 = document.querySelector('.upbratPlaylist5')
+        //-------------------------------------------------------------------------------------------------
+        var box__item = document.querySelectorAll('.box__item');
+        var signOut = document.querySelector('.signOut')
+        var signOut__No = document.querySelector('.signOut__No');
+      
+        var relaxPlaylistAll = document.querySelectorAll('.relaxPlaylistAll')
+        
+        var upbeatPlaylistAll = document.querySelectorAll('.upbeatPlaylistAll')
     
     
-    var turnOff = document.querySelectorAll('.turnOff')
-    var hideVideo = document.querySelector('.hideVideo')
-    // music
-    relaxPlaylistAll[0].onclick = () => {
-        relaxPlaylist1.style.display ="block";
-        relaxPlaylist2.style.display ="none";
-        relaxPlaylist3.style.display ="none";
-        relaxPlaylist4.style.display ="none";
-        relaxPlaylist5.style.display ="none";
-
-    }
-    relaxPlaylistAll[1].onclick = () => {
-        relaxPlaylist1.style.display ="none";
-        relaxPlaylist2.style.display ="block";
-        relaxPlaylist3.style.display ="none";
-        relaxPlaylist4.style.display ="none";
-        relaxPlaylist5.style.display ="none";
-
-    }
-    relaxPlaylistAll[2].onclick = () => {
-        relaxPlaylist1.style.display ="none";
-        relaxPlaylist2.style.display ="none";
-        relaxPlaylist3.style.display ="block";
-        relaxPlaylist4.style.display ="none";
-        relaxPlaylist5.style.display ="none";
-
-    }
-    relaxPlaylistAll[3].onclick = () => {
-        relaxPlaylist1.style.display ="none";
-        relaxPlaylist2.style.display ="none";
-        relaxPlaylist3.style.display ="none";
-        relaxPlaylist4.style.display ="block";
-        relaxPlaylist5.style.display ="none";
-
-    }
-    relaxPlaylistAll[4].onclick = () => {
-        relaxPlaylist1.style.display ="none";
-        relaxPlaylist2.style.display ="none";
-        relaxPlaylist3.style.display ="none";
-        relaxPlaylist4.style.display ="none";
-        relaxPlaylist5.style.display ="block";
-    }
-    hideVideo.onclick = () => {
-        for (var i = 0; i < this.length;i++){
-            turnOff[i].style.display ="none"
+        var relaxPlaylist1 = document.querySelector('.relaxPlaylist1')
+        var relaxPlaylist2 = document.querySelector('.relaxPlaylist2')
+        var relaxPlaylist3 = document.querySelector('.relaxPlaylist3')
+        var relaxPlaylist4 = document.querySelector('.relaxPlaylist4')
+        var relaxPlaylist5 = document.querySelector('.relaxPlaylist5')
+    
+        // var upbeatPlaylist1 = document.querySelector('.upbratPlaylist1')
+        // var upbeatPlaylist2 = document.querySelector('.upbratPlaylist2')
+        // var upbeatPlaylist3 = document.querySelector('.upbratPlaylist3')
+        // var upbeatPlaylist4 = document.querySelector('.upbratPlaylist4')
+        // var upbeatPlaylist5 = document.querySelector('.upbratPlaylist5')
+        
+        
+        var turnOff = document.querySelectorAll('.turnOff')
+        var hideVideo = document.querySelector('.hideVideo')
+        // music
+        relaxPlaylistAll[0].onclick = () => {
+            relaxPlaylist1.style.display ="block";
+            relaxPlaylist2.style.display ="none";
+            relaxPlaylist3.style.display ="none";
+            relaxPlaylist4.style.display ="none";
+            relaxPlaylist5.style.display ="none";
+    
         }
-    }
-    // console.log(upbeatPlaylistAll[0])
-    // upbeatPlaylistAll[0].onclick = () => {
-    //     upbeatPlaylist1.style.display ="block";
-    //     // upbeatPlaylist2.style.display ="none";
-        // upbeatPlaylist3.style.display ="none";
-        // upbeatPlaylist4.style.display ="none";
-        // upbeatPlaylist5.style.display ="none";
-
-    // }
-    // turnOffMusic[4].onclick = () => {
-    //     for (var i = 0; i < this.length;i++){
-    //         turnOff[i].style.display ="block"
-    //     }
-    // }
-
-
-//----------------------------------------------------
-
-
-
-  
-</script>
+        relaxPlaylistAll[1].onclick = () => {
+            relaxPlaylist1.style.display ="none";
+            relaxPlaylist2.style.display ="block";
+            relaxPlaylist3.style.display ="none";
+            relaxPlaylist4.style.display ="none";
+            relaxPlaylist5.style.display ="none";
+    
+        }
+        relaxPlaylistAll[2].onclick = () => {
+            relaxPlaylist1.style.display ="none";
+            relaxPlaylist2.style.display ="none";
+            relaxPlaylist3.style.display ="block";
+            relaxPlaylist4.style.display ="none";
+            relaxPlaylist5.style.display ="none";
+    
+        }
+        relaxPlaylistAll[3].onclick = () => {
+            relaxPlaylist1.style.display ="none";
+            relaxPlaylist2.style.display ="none";
+            relaxPlaylist3.style.display ="none";
+            relaxPlaylist4.style.display ="block";
+            relaxPlaylist5.style.display ="none";
+    
+        }
+        relaxPlaylistAll[4].onclick = () => {
+            relaxPlaylist1.style.display ="none";
+            relaxPlaylist2.style.display ="none";
+            relaxPlaylist3.style.display ="none";
+            relaxPlaylist4.style.display ="none";
+            relaxPlaylist5.style.display ="block";
+        }
+        hideVideo.onclick = () => {
+            for (var i = 0; i < this.length;i++){
+                turnOff[i].style.display ="none"
+            }
+        }
+        // console.log(upbeatPlaylistAll[0])
+        // upbeatPlaylistAll[0].onclick = () => {
+        //     upbeatPlaylist1.style.display ="block";
+        //     // upbeatPlaylist2.style.display ="none";
+            // upbeatPlaylist3.style.display ="none";
+            // upbeatPlaylist4.style.display ="none";
+            // upbeatPlaylist5.style.display ="none";
+    
+        // }
+        // turnOffMusic[4].onclick = () => {
+        //     for (var i = 0; i < this.length;i++){
+        //         turnOff[i].style.display ="block"
+        //     }
+        // }
+    
+    
+    //----------------------------------------------------
+    
+    
+    
+      
+    </script>
+</body>
 </html>
