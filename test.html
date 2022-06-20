@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .ring {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+           display: flex;
+           margin:0 auto; 
+           
+        }
+        
+        .ring div {
+            position: absolute;
+        }
+
+          
+       .s{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(218, 45, 45);
+            border-radius: 80px;
+            animation: load 1s  infinite linear ;
+            animation-delay: -0.5s;
+           
+        }
+      .f{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(13, 185, 211);
+            border-radius: 80px;
+            animation: load 1s  infinite linear ;
+      }
+           
+        
+      .a {
+        width: 100px;
+            height: 100px;
+            background-color: rgb(222, 30, 30);
+            border-radius: 80px;
+            animation: load1 1s  infinite linear ;
+            animation-delay: -0.5s;
+      }
+        @keyframes load {
+            0% {
+                transform: translatex(0);
+            }
+            50% {
+                transform: translatex(80px);
+            }
+            100% {
+                transform: translatex(0px);
+            }
+        }
+        @keyframes load1 {
+            0% 
+            {
+                opacity: 0;
+                ransform: translateX(0px);
+            }
+            49.99% {
+                opacity: 0;
+                transform: translateX(80px);
+            }
+            50% {
+                opacity: 1;
+                transform: translateX(80px);
+            }
+            100% {
+                opacity: 1;
+                ransform: translateX(0px);
+            }
+        }
+        .icon {
+            width: 100px;
+            height:100px;
+            background-color: beige;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="ring">
+        <div class="s" ></div>
+        <div class="f" ></div>
+        <div class="a" ></div>
+    </div>
+
+    <div class="icon">
+
+    </div>
+</body>
+</html>

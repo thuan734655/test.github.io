@@ -50,18 +50,122 @@ body {
     list-style: none;
     padding-left: 30px;
     font-size: 20px;
+    cursor: pointer;
 }
+ 
+/* setting list*/
+.settingList {
+    width: 250px;
+    height: 200px;
+    background-color: wheat;
+    position: absolute;
+    top:70px;
+    right: 50px;
+    border-radius:4px ;
+    display: none;
+}
+ .settingList-item__setting {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__feedback {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__game {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__report{
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__changeAccount {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__setting:hover {
+    background-color: cornsilk;
+ }
+ .settingList-item__game:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item__report:hover {
+    background-color: cornsilk;
+ }
+ .settingList-item__changeAccount:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item__feedback:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item:first-child::after{
+    content: "";
+    height: 20px;
+    background-color:re; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translateY(-100%);
+}
+  .settingList-item:first-child:before {
+   content: "";
+   position: absolute;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-bottom: 10px solid wheat;
+   transform: translateY(-90%);
+   left: 100px;
+  }
+  
+ .settingList-close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+ }
+ .settingList-textAndicon {
+    margin:10px 60px;
+    
+
+ }
 .nav-list__item__profile {
     color:aliceblue;
     list-style: none;
     padding-left: 30px;
     font-size: 20px;
+    cursor: pointer;
 }
 .nav-list__item__signOut {
     color:aliceblue;
     list-style: none;
     padding-left: 30px;
     font-size: 20px;
+    cursor: pointer;
 }
 .nav__item__right__Hover:hover{
     color: orangered;
@@ -105,6 +209,7 @@ body {
 }
 .signOut__No {
     color: red;
+    cursor: pointer;
 }
 .signOut-title {
     margin-left: 16px;
@@ -139,6 +244,10 @@ body {
 }
 .relaxPlaylistAll {
     color:rgb(221, 204, 228);
+    cursor: pointer;
+}
+.relaxPlaylistAll:hover {
+    color: rgb(179, 179, 171);
 }
 .video {
     margin-top: 120px;
@@ -153,7 +262,7 @@ body {
 }
 
 .relaxPlaylist2 {
-    display: none1;
+    
   
     top:455px;
     border-radius: 10px;
@@ -161,23 +270,33 @@ body {
 
 .relaxPlaylist3 {
     display: none;
-     position: absolute;
+    
     top:455px;
     border-radius: 10px;
 }
 
 .relaxPlaylist4 {
     display: none;
-    position: absolute;
+   
     top:455px;
     border-radius: 10px;
 }
 
 .relaxPlaylist5 {
     display: none;
-    position: absolute;
+    
     top:455px;
     border-radius: 10px;
+}
+.hideVideo {
+    color:rgb(216, 28, 28) ;
+    margin-top: 0;
+    margin-left: 30px;
+     font-size: 14px;
+     cursor: pointer;
+}
+.hideVideo:hover {
+    color:orangered ;
 }
 .music-note{
     margin-left: 10px;

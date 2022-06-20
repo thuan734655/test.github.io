@@ -26,6 +26,8 @@ var relaxPlaylist4 = document.querySelector('.relaxPlaylist4')
 
 var relaxPlaylist5 = document.querySelector('.relaxPlaylist5')
 
+ var hideVideo = document.querySelector('.hideVideo')
+
 relaxPlaylistAll[0].onclick = () => {
     relaxPlaylist1.style.display = 'block';
     relaxPlaylist2.style.display = 'none';
@@ -61,3 +63,23 @@ relaxPlaylistAll[4].onclick = () => {
     relaxPlaylist4.style.display = 'none';
     relaxPlaylist5.style.display = 'block';
 }
+
+hideVideo.onclick = ( )=>{
+    relaxPlaylist1.style.display = 'none';
+    relaxPlaylist2.style.display = 'none';
+    relaxPlaylist3.style.display = 'none';
+    relaxPlaylist4.style.display = 'none';
+    relaxPlaylist5.style.display = 'none';
+}
+
+
+// setting list 
+  var settingList = document.querySelector('.settingList')
+  var navSetting = document.querySelector('.nav-list__item__setting')
+var settingClose = document.querySelector('.settingList-close')
+  navSetting.onclick = () => {
+     settingList.style.display ="block"
+  }
+ settingClose.onclick = () => {
+    settingList.style.display ="none"
+ }
