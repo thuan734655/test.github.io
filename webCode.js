@@ -79,7 +79,27 @@ hideVideo.onclick = ( )=>{
 var settingClose = document.querySelector('.settingList-close')
   navSetting.onclick = () => {
      settingList.style.display ="block"
+     coating.style.display="block"; // khai bao o dong thu 5
   }
  settingClose.onclick = () => {
     settingList.style.display ="none"
+    coating.style.display="none";  // lhai bao o dong thu 5
+ }
+
+
+ /*profile */
+
+ var profileClose = document.querySelector('.profile-close')
+
+ var profile =document.querySelector('.profile')
+
+ var navProfile = document.querySelector('.nav-list__item__profile')
+
+ profileClose.onclick = () => {
+    profile.style.display='none'
+    coating.style.display="none";  // lhai bao o dong thu 5
+ }
+ navProfile.onclick = () => {
+    profile.style.display = 'block'
+    coating.style.display="block"; // khai bao o dong thu 5
  }
