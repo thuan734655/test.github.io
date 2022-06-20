@@ -366,3 +366,32 @@ body {
     }
     
 }
+
+/* profile*/
+.profile {
+    width: 300px;
+    height: 500px;
+    background-color: antiquewhite;
+    position: absolute;
+    top : 76px;
+    right: 9px;
+}
+.profile-story {
+ 
+}
+
+.profile-avatar {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(https://st.quantrimang.com/photos/image/2021/05/21/AVT-Doi11-2.jpg);
+  background-color: black;
+}
+.profile_coverImage {
+  width: 280px;
+  height: 200px;
+  background-color: rgb(161, 163, 165);
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
