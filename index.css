@@ -197,10 +197,10 @@ body{
     border-radius: 200px;
 }
 
-/* js father*/
+
 .jsFather-title__text {
     color: aliceblue;
-    margin-left: 400px;
+    margin-left: 50%;
 
 }
 .js-father {

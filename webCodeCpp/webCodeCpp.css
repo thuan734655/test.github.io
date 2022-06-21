@@ -231,6 +231,7 @@ body {
 
 .exercise::-webkit-scrollbar {
     width:5px;
+    height:5px;
 }
 .exercise::-webkit-scrollbar-thumb {
     background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
@@ -244,10 +245,41 @@ body {
 #Input {
     grid-column:2/3;
     border: 1px solid darkgray;
+    overflow:auto;
 }
+#Input::-webkit-scrollbar {
+    width:5px;
+    height:5px;
+}
+#Input::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+#Input::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
+}
+
 #Output {
     border: 1px solid darkgray;
+    overflow:auto;
 }
+
+#Output::-webkit-scrollbar {
+    width:5px;
+    height:5px;
+}
+#Output::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+#Output::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
+}
+
+
+/*video*/
 .video {
     margin:0;
     grid-column:-3/-4;

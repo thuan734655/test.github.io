@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java</title>
-    <link rel="stylesheet" href="webCodejava.css">
+    <title>Python</title>
+    <link rel="stylesheet" href="./webCodePython.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    
 </head>
@@ -169,13 +169,16 @@
         <div class="exercise">
              <div class="topic">
                 <h1 style="color:aliceblue; margin-left:40px"> Bài tập</h1>
-                <p style="color:aliceblue; margin-left: 10px;">  Cho trước hình chữ nhật. Bạn hãy viết chương trình hiển thị diện tích của hình chữ nhật này ra màn hình giống như sau:
-                     Area = {P}
-               </p style="color:aliceblue; margin-left: 10px;">
-                <p style="color:aliceblue; margin-left: 10px;">  Với {P} là diện tích của hình chữ nhật</p>
+                <p style="color:aliceblue; margin-left: 10px;">  cho 2 số nguyên dương a và m . tìm số lượng số nguyên không âm x sao cho Gcd(a,m)=Gcd(a+x,m) (x < m). Với Gcd(a,b) là số nguyên dương lớn nhất mà đều là ước của a và b.</p>
+                    
+               <p style="color:aliceblue; margin-left: 10px;">
+                <p style="color:aliceblue; margin-left: 10px;font-weight: bold;">  Ví dụ:</p>
+                <p style="color:aliceblue; margin-left: 10px;"> với a=4 và m =9 thì đầu ra sol(4,9)=6 (giải thích : x=0,1,3,4,6,7) </p>
+                <p style="color:aliceblue; margin-left: 10px;"> với a=5 và m=10 thì đầu ra sol(5,10)=1(giải thích :x=0). </p>
                 
                 <p style="color:white;margin-left:10px; font-size: 18px">Input:</p>
-                <p style="color:white;margin-left: 10px;">- dòng đầu là chiều dài. dòng thứ 2 là chiều rộng.</p> 
+                <p style="color:white;margin-left: 10px;">- 2 số a và m</p> 
+                <p style="color:white;margin-left: 10px;">- mỗi dòng là 1 test case.</p> 
                  
                 <p class="exercise-note">note: chọn ngôn ngữ lập trình ở trên thanh diều hướng. bấm run để chạy code </p>
             </div>
@@ -198,21 +201,26 @@
        <!-- input-->
        <div id="Input">
         <p style="color:white;margin-left:30px; font-size: 18px; ;">Input:</p>
-        <p style="color:white;margin-left: 30px;">7.5</p>
-        <p style="color:white;margin-left: 30px;">3.8</p>
+        <p style="color:white;margin-left: 30px;">4,9</p>
+        <p style="color:white;margin-left: 30px;">5,10</p>
+        <p style="color:white;margin-left: 30px;">37,102</p>
+        <p style="color:white;margin-left: 30px;">85,111</p>
      </div>
 
      <!-- output  -->
      <div id="Output">
         <p style="color:white;margin-left:30px; font-size: 18px; ;">Output:</p>
-        <p style="color:white;margin-left: 30px;">28.5</p>
+        <p style="color:white;margin-left: 30px;">6</p>
+        <p style="color:white;margin-left: 30px;">1</p>
+        <p style="color:white;margin-left: 30px;">32</p>
+        <p style="color:white;margin-left: 30px;">72</p>
      </div>
       
     </div>
 
     <!-- compiler -->
     <div class="compiler">
-        <iframe  class="compiler" src="https://www.programiz.com/java-programming/online-compiler/" frameborder="0"></iframe>
+        <iframe  class="compiler" src="https://www.programiz.com/python-programming/online-compiler/" frameborder="0"></iframe>
     </div>
             <!--sign out -->
             <div class="signOut">
@@ -246,7 +254,7 @@
             </div>
 
 
-            <script src="./webCodejava.js"></script>
+            <script src="./webCodePython.js"></script>
 </body>
 
 </html>
