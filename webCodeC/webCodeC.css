@@ -595,6 +595,7 @@ body {
     color: green;
     grid-row: 5/6;
     grid-column: 3/4;
+    display: none;
 }
 
 
@@ -680,6 +681,7 @@ body {
     color: green;
     grid-row: 5/6;
     grid-column: 3/4;
+    display: none;
 }
 
 /* feature report*/
