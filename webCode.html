@@ -37,7 +37,7 @@
 
         <div class="settingList-item__report"> <span class="settingList-textAndicon" > report <i class="fa-regular fa-flag"></i>  </div>
         <div class="settingList-item__feedback"> <span class="settingList-textAndicon" >feedback <i class="fa-solid fa-comment-slash"></i></div>
-        <div class="settingList-item__game"> <span class="settingList-textAndicon" >Game <i class="fa-solid fa-gamepad"></i></div>
+        <!-- <div class="settingList-item__game"> <span class="settingList-textAndicon" >Game <i class="fa-solid fa-gamepad"></i></div> -->
             <div class="settingList-item__changeAccount"> <span class="settingList-textAndicon" >change account </div>
         
                 <!-- settinglist close -->
@@ -45,6 +45,111 @@
     
                 
         </div>
+         <!-- feature setting -->
+          
+         <div class="featureSetting">
+
+           
+            <p class="featureSetting__text__rename"> rename</p>
+            <p class="featingSetting__text__changePassword"> chane pasword</p>
+         </div>
+
+         <!-- feature-rename -->
+         <div class="featureSetting-rename">
+            <div class="featureSetting-rename__result">success</div>
+            <div class="featureSetting-rename__close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+            <label class="featureSetting-rename__title" for="rename"> new name:</label>
+            <input class="featureSetting-rename__input" type="text">
+            <br>
+            
+            <label class="rename-notification" for="notification">tên không hợp lệ</label>
+            <label class="Password-title" for="checkPassword"> Password:</label>
+            <input class="checkPassword-input" type="text">
+            <label class="Password-notionfication" for="notification"> Password không đúng</label>
+            <div class="rename-confirm"> <span class="rename-confirm__content">confirm</span></div>
+        </div>
+        <div class="featureSetting-rename__coating"></div>
+      
+
+         <!-- feature-changePassword-->
+         <div class="featureSetting-changePassword">
+            <p class="featureSetting-changePassword__result"> success </p>
+
+            <div class="featureSetting-changePassword__close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+            <label class="featureSetting-changePassword__title" for="rename"> new password:</label>
+            <input class="featureSetting-changePassword__input" type="text">
+            <br>
+            
+            <label class="rename-notification" for="notification">mật khẩu không hợp lệ</label>
+            <label class="Password-title" for="checkPassword"> Old password:</label>
+            <input class="checkPassword-input" type="text">
+            <label class="Password-notionfication" for="notification"> Password không đúng</label>
+            <div class="rename-confirm"> <span class="rename-confirm__content">confirm</span></div>
+        </div>
+        <div class="featureSetting-changePassword__coating"></div>
+       
+        <!-- feature-report-->
+        <div class="feature-report__guide">
+            <p class="feature-report__guide__text"> click vô repost đi :))</p>
+        </div>
+        <div class="feature-report">
+           
+                <div class="feature-report-input__text"> Problem:</div>
+                <textarea class="feature-report-input"  name="feature-report-input" cols="2" rows="2">
+                </textarea>
+            
+            <div class="feature-report__submit"> submit</div>
+            <p class="feature-report__result"> success </p>
+            <div class="feature-report__close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="featureSetting-report__coating"></div>
+       
+        <!-- feature-feedback-->
+
+        <div class="feature-feedback">
+            <span class="feature-feedback__item">tốt! <input class="feature-feedback__select" name="feedback" type="checkbox"></input></span>
+            <br>
+            <span class="feature-feedback__item"> rất tốt!! <input class="feature-feedback__select" name="feedback" type="checkbox"></input></span>
+            <br>
+            <span class="feature-feedback__item">quá tốt!! <input class="feature-feedback__select" name="feedback" type="checkbox"></input></span>
+            <p class="feature-feedback__submit">submit</p>
+        </div>
+
+        <!-- feature change password-->
+        <div class="feature-changeAccount__guide">
+            <p class="feature-changeAccount__guide__text"> click vô change account đi :))</p>
+        </div>
+
+        <div class = "boxSI">
+            <div class = "boxSI-align">
+                <label class = "boxSI-label" for="Name" > Name</label>
+                <label class= "notification" for="notification">wrong account</label>
+                <input id="Name" class = "input"  type="text" > 
+                <br>
+               
+                
+                 <label class = "boxSI-label"for="Password">Password</label>
+                 <label class= "notification" for="notification">wrong Password</label>
+                 <input id ="Password" class = "input" type="text">   
+               
+                 <br>
+                   <div class ="align">
+                     <button id ="button__submit">Sign in</button>
+                     <br/>
+                
+                   <button id="next" style="margin-left: 10px;"><a class="next"  href="./Webcontent.html"> next</a></button>
+                   </div>
+                   <br>   
+                   <div class="align">
+                    <!-- <h1 class = "next" href="./signUp.html"> sign Up</h1> -->
+                   </div>                   
+            </div>
+
+            <div class="boxSI__close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+          </div>
+          <div class="boxSI__coating "></div>
+
+
     <div class="musicAndExercise">
         <div class="music">
             <!-- from music -->
@@ -139,6 +244,7 @@
                     </div>
                </div>
             </div>
+
 
             <script src="./webCode.js"></script>
 </body>

@@ -103,3 +103,156 @@ var settingClose = document.querySelector('.settingList-close')
     profile.style.display = 'block'
     coating.style.display="block"; // khai bao o dong thu 5
  }
+
+
+ /* feature setting */
+
+ var featureSetting = document.querySelector('.featureSetting')
+
+ var itemSetting = document.querySelector('.settingList-item__setting')
+
+ itemSetting.onmouseover= () => {
+    // console.log(2)
+    featureSetting.style.display = "block"
+ }
+
+ itemSetting.onmouseout = () => {
+    featureSetting.style.display = "none"
+ }
+ // dung de cho cai featuresetting kh bi tat khi cho chuot ra khoi the itemsetting
+ featureSetting.onmouseover = () => { 
+    featureSetting.style.display = "block"
+ }
+
+ // dung de cho cai featuresetting tat khi cho chuot ra khoi the featuresetting
+ featureSetting.onmouseout = () => { 
+    featureSetting.style.display = "none"
+ }
+
+  // feature seetting rename
+  var settingRename = document.querySelector('.featureSetting__text__rename')
+
+  var featureSettingRename = document.querySelector('.featureSetting-rename')
+
+  var featureSettingRenameClose = document.querySelector('.featureSetting-rename__close')  
+  var featureSettingRenameCoating = document.querySelector('.featureSetting-rename__coating')
+  settingRename.onclick = () => {
+    featureSettingRename.style.visibility= "visible"; 
+    featureSettingRenameCoating.style.display='block';  
+}
+  featureSettingRenameClose.onclick = () => {
+     
+    featureSettingRenameCoating.style.display='none';
+    featureSettingRename.style.visibility= "hidden"; 
+  }
+  
+  
+
+  //--------------------------------
+
+   // feature seetting changePassword
+   var settingChangePassword = document.querySelector('.featingSetting__text__changePassword')
+
+   var featureSettingChangePassword = document.querySelector('.featureSetting-changePassword ')
+ 
+   var featureSettingChangePasswordClose = document.querySelector('.featureSetting-changePassword__close')  
+   var featureSettingChangePasswordCoating = document.querySelector('.featureSetting-changePassword__coating')
+   settingChangePassword.onclick = () => {
+     featureSettingChangePassword.style.visibility= "visible"; 
+     featureSettingChangePasswordCoating.style.display='block';  
+ }
+   featureSettingChangePasswordClose.onclick = () => {
+      
+     featureSettingChangePasswordCoating.style.display='none';
+     featureSettingChangePassword.style.visibility= "hidden"; 
+   }
+   
+   
+ 
+   //--------------------------------
+ 
+/* feature report*/
+ var featureReportGuide = document.querySelector('.feature-report__guide')
+
+  var settingListItemReport = document.querySelector('.settingList-item__report')
+
+  var featureReport = document.querySelector('.feature-report')
+  
+  var featureReportClose = document.querySelector('.feature-report__close')
+
+  var featureSettingReportCoating = document.querySelector('.featureSetting-report__coating')
+
+  settingListItemReport.onmouseover = () => {
+    featureReportGuide.style.display = "block"
+  }
+  settingListItemReport.onmouseout = () => {
+    featureReportGuide.style.display = "none"
+  }
+
+  featureReportGuide.onmouseover = () => {
+    featureReportGuide.style.display = "block"
+  }
+  featureReportGuide.onmouseout = () => {
+    featureReportGuide.style.display = "none"
+  }
+
+  settingListItemReport.onclick = () => {
+    featureSettingReportCoating.style.display = 'block';
+    featureReport.style.visibility ='visible'
+  }
+  featureReportClose.onclick = () => {
+    featureReport.style.visibility ='hidden'
+    featureSettingReportCoating.style.display = 'none';
+  }
+
+  /*setting feedback */
+  var settingListItemFeedback = document.querySelector('.settingList-item__feedback')
+ 
+  var featureFeedback = document.querySelector('.feature-feedback')
+  
+  settingListItemFeedback.onmouseover = () => {
+   featureFeedback.style.display = "block"
+  }
+  settingListItemFeedback.onmouseout = () => {
+   featureFeedback.style.display = "none"
+  }
+
+ featureFeedback.onmouseover = () => {
+   featureFeedback.style.display = "block"
+  }
+ featureFeedback.onmouseout = () => {
+   featureFeedback.style.display = "none"
+  }
+
+    /*setting change password*/
+    var settingListItemchangaeAccount = document.querySelector('.settingList-item__changeAccount')
+   
+    var featurechangaeAccountGuide = document.querySelector('.feature-changeAccount__guide')
+
+    var boxSI = document.querySelector('.boxSI')
+
+    var boxSIClose = document.querySelector('.boxSI__close')
+
+    var boxSI__coating = document.querySelector('.boxSI__coating')
+
+    settingListItemchangaeAccount.onmouseover = () => {
+     featurechangaeAccountGuide.style.display = "block"
+    }
+    settingListItemchangaeAccount.onmouseout = () => {
+     featurechangaeAccountGuide.style.display = "none"
+    }
+  
+   featurechangaeAccountGuide.onmouseover = () => {
+     featurechangaeAccountGuide.style.display = "block"
+    }
+   featurechangaeAccountGuide.onmouseout = () => {
+     featurechangaeAccountGuide.style.display = "none"
+    }
+    settingListItemchangaeAccount.onclick = () => {
+        boxSI__coating.style.display = "block"
+        boxSI.style.display="block"
+    }
+    boxSIClose.onclick = () => {
+        boxSI__coating.style.display = "none"
+        boxSI.style.display = "none"
+    }

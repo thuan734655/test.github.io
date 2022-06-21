@@ -52,109 +52,6 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
- 
-/* setting list*/
-.settingList {
-    width: 250px;
-    height: 200px;
-    background-color: wheat;
-    position: absolute;
-    z-index: 4;
-    top:60px;
-    right: 15px;
-    border-radius:4px ;
-    display: none;
-
-}
- .settingList-item__setting {
-    width: 100%;
-   font-size: 20px;
-   border-bottom: 1px solid darkgray;
-   padding-bottom: 10px;
-   cursor: pointer;
- 
- }
- .settingList-item__feedback {
-    width: 100%;
-   font-size: 20px;
-   border-bottom: 1px solid darkgray;
-   padding-bottom: 10px;
-   cursor: pointer;
- 
- }
- .settingList-item__game {
-    width: 100%;
-   font-size: 20px;
-   border-bottom: 1px solid darkgray;
-   padding-bottom: 10px;
-   cursor: pointer;
- 
- }
- .settingList-item__report{
-    width: 100%;
-   font-size: 20px;
-   border-bottom: 1px solid darkgray;
-   padding-bottom: 10px;
-   cursor: pointer;
- 
- }
- .settingList-item__changeAccount {
-    width: 100%;
-   font-size: 20px;
-   border-bottom: 1px solid darkgray;
-   padding-bottom: 10px;
-   cursor: pointer;
- 
- }
- .settingList-item__setting:hover {
-    background-color: cornsilk;
- }
- .settingList-item__game:hover {
-    background-color: cornsilk;
- }
- 
- .settingList-item__report:hover {
-    background-color: cornsilk;
- }
- .settingList-item__changeAccount:hover {
-    background-color: cornsilk;
- }
- 
- .settingList-item__feedback:hover {
-    background-color: cornsilk;
- }
- 
- .settingList-item:first-child::after{
-    content: "";
-    height: 20px;
-    background-color:re; 
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    transform: translateY(-100%);
-}
-  .setting-iconTriangle {
-   content: "";
-   position: absolute;
-   border-left: 10px solid transparent;
-   border-right: 10px solid transparent;
-   border-bottom: 10px solid wheat;
-   transform: translateY(-90%);
-   left: 200px;
-  }
-  
- .settingList-close {
-    position:absolute;
-    top: 12px;
-    right: 0;
-    transform: translateY(-100%);
- }
- .settingList-textAndicon {
-    margin:10px 60px;
-    
-
- }
 
 .nav-list__item__profile {
     color:aliceblue;
@@ -437,12 +334,499 @@ body {
     border-radius: 10px;
     margin-left: 25px;
 }
+.profile-story__text__item {
+    margin-left: 10px;
+}
 .profile-close {
     position:absolute;
     top: 12px;
     right: 0;
     transform: translateY(-100%);
  }
- .profile-close:hover {
-    color:orangered;
+
+ /* setting list*/
+.settingList {
+    width: 250px;
+    height: 200px;
+    background-color: wheat;
+    position: absolute;
+    z-index: 4;
+    top:60px;
+    right: 15px;
+    border-radius:4px ;
+    display: none;
+
+}
+ .settingList-item__setting {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
  }
+ .settingList-item__feedback {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__game {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__report{
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__changeAccount {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__setting:hover {
+    background-color: cornsilk;
+ }
+ .settingList-item__game:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item__report:hover {
+    background-color: cornsilk;
+ }
+ .settingList-item__changeAccount:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item__feedback:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item:first-child::after{
+    content: "";
+    height: 20px;
+    background-color:re; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translateY(-100%);
+}
+  .setting-iconTriangle {
+   content: "";
+   position: absolute;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-bottom: 10px solid wheat;
+   transform: translateY(-90%);
+   left: 200px;
+  }
+  
+ .settingList-close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+ }
+ .settingList-textAndicon {
+    margin:10px 60px;
+ }
+
+ /*  feature setting*/
+  .featureSetting {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(1, 1, 1);
+    border: 1px solid darkgray;
+    position: absolute;
+    z-index: 4;
+    top: 60px;
+    right: 265px;
+    display: none;
+  }
+ .featureSetting__text__rename {
+    color: antiquewhite;
+    margin-left: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+ }
+ .featingSetting__text__changePassword{
+     color: antiquewhite;
+     margin-left: 20px;
+     margin-top: 10px;
+     cursor: pointer;
+ }
+ .featureSetting__text__rename:hover {
+    color:rgb(194, 194, 162);
+ }
+ .featingSetting__text__changePassword:hover {
+    color:rgb(194, 194, 162);
+
+ }
+ .featureSetting-rename {
+    width: 350px;
+    height: 160px;
+    position: absolute;
+    z-index: 6;
+    background-color: aliceblue;
+    top: 370px;
+    left: 30%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    grid-template-rows:30px 30px 30px 30px 30px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    visibility:hidden;
+    
+ }
+ .featureSetting-rename__title {
+    font-weight: bold;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 5px ;
+ }
+ .featureSetting-rename__input {
+    border-radius: 5px;
+    grid-column: 2/4;
+ }
+.rename-notification {
+    display: none;
+   grid-column: 2/4; 
+   color: rgb(235, 47, 47);
+}
+ .Password-title {
+    margin: 5px;
+    grid-row: 3/4;
+    font-weight: bold;
+    grid-column: 1/2;
+    
+ }
+ .checkPassword-input {
+    border-radius: 5px;
+   grid-column: 2/4;
+   grid-row: 3/4;
+ }
+ .Password-notionfication {
+    display: none;
+    color: rgb(235, 47, 47);
+    grid-column: 2/4; 
+ }
+.rename-confirm {
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+.rename-confirm__content{
+    margin-left: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+}
+.featureSetting-rename__close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+}
+.featureSetting-rename__coating {
+    width: 100%;
+    height: 1670px;
+    background-color: rgba(140, 149, 156,0.5);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    display: none;
+}
+.featureSetting-rename__result {
+    margin-top: 0px;
+    margin-left: 90px;
+    font-weight: bold;
+    color: green;
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+
+
+/*change password*/
+.featureSetting-changePassword {
+    width: 350px;
+    height: 160px;
+    position: absolute;
+    z-index: 6;
+    background-color: rgb(212, 220, 228);
+    top: 370px;
+    left: 30%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    grid-template-rows:30px 30px 30px 30px 30px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    visibility:hidden;
+    
+ }
+ .featureSetting-changePassword__title {
+    font-weight: bold;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 5px ;
+ }
+ .featureSetting-changePassword__input {
+    border-radius: 5px;
+    grid-column: 2/4;
+ }
+.rename-notification {
+    display: none;
+   grid-column: 2/4; 
+   color: rgb(235, 47, 47);
+}
+ .Password-title {
+    margin: 5px;
+    grid-row: 3/4;
+    font-weight: bold;
+    grid-column: 1/2;
+    
+ }
+ .checkPassword-input {
+    border-radius: 5px;
+   grid-column: 2/4;
+   grid-row: 3/4;
+ }
+ .Password-notionfication {
+    display: none;
+    color: rgb(235, 47, 47);
+    grid-column: 2/4; 
+ }
+.rename-confirm {
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+.rename-confirm__content{
+    margin-left: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+}
+.featureSetting-changePassword__close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+}
+.featureSetting-changePassword__coating {
+    width: 100%;
+    height: 1670px;
+    background-color: rgba(140, 149, 156,0.5);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    display: none;
+}
+.featureSetting-changePassword__result {
+    margin-top: 0px;
+    margin-left: 90px;
+    font-weight: bold;
+    color: green;
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+
+/* feature report*/
+
+.feature-report__guide {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(1, 1, 1);
+    border: 1px solid darkgray;
+    position: absolute;
+    z-index: 10;
+    top: 94px;
+    right: 265px;
+    display: none;
+}
+.feature-report__guide__text {
+    margin-left: 8px;
+    color: aliceblue;
+}
+.feature-report {
+    width: 550px;
+    height: 460px;
+    position: absolute;
+    z-index: 6;
+    background-color: aliceblue;
+    top: 300px;
+    left: 30%;
+    border-radius: 10px ;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 200px 180px 70px;
+    visibility: hidden;
+}
+.feature-report-input__text {
+    font-weight: bold;
+    margin-left: 10px;
+    grid-row: 2/3;
+}
+.feature-report-input {
+  grid-row: 1/3;
+  grid-column: 2/4;
+}
+.feature-report__submit {
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 160px;
+    margin-top: 15px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.feature-report__result{
+    /* margin-top: 0px; */
+    margin-left: 90px;
+    font-weight: bold;
+    color: green;
+    grid-row: 3/4;
+    grid-column: 3/4;
+    display: none;
+}
+.feature-report__close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+}
+.featureSetting-report__coating {
+    width: 100%;
+    height: 1670px;
+    background-color: rgba(140, 149, 156,0.5);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    display: none;
+}
+
+/*setting feedback*/
+.feature-feedback {
+    width: 100px;
+    height: 130px;
+    background-color: rgb(6, 6, 6);
+    position: absolute;
+    top: 128px;
+    right: 265px;
+    z-index: 5;
+    display: none;
+    border: 1px solid darkgray;
+}
+.feature-feedback__item {
+    margin-left: 5px;
+    margin-top: 10px;
+    color: white;
+}
+.feature-feedback__submit {
+    margin-left: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(23, 141, 180);
+}
+ 
+
+/* setting change Password*/
+
+.feature-changeAccount__guide{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(8, 7, 7);
+    border: 1px solid darkgray;
+    position: absolute;
+    z-index: 10;
+    top: 94px;
+    right: 265px;
+    display: none;
+}
+
+.feature-changeAccount__guide__text{
+    margin-left: 8px;
+    color: aliceblue;
+}
+.boxSI{
+    height: 300px;
+    width: 450px;
+    background-color: beige;
+    display: none;
+    border-radius: 10px;
+   position: absolute;
+   z-index: 8;
+   top:400px;
+   left: 30%;
+
+}
+
+    .boxSI-label{
+    color: rgba(4, 2, 32, 0.778);
+     min-width: 100px;
+      
+    }
+    .input{
+      display: flex;
+     flex: 1;    
+    }
+     .boxSI-align{
+        width: 70px;
+        margin-top: 50px;
+        margin-left: 170px;
+     }
+  
+   #next {
+    font-size: 16px;
+    display: none;
+   }
+     .notification{
+        color:red;
+        font-size: 13px;
+        min-width: 100px;
+        display: inline-flex;
+        display: none;
+     }
+     .next{
+      min-width: 100px;
+     text-decoration: none;
+     color: black;
+     font-size: 16px;
+         }
+
+     
+     .next:hover{
+      color: #dc4a38;
+     }
+     .align {
+      display: inline-flex;
+      
+
+     }
+     .boxSI__close {
+        position:absolute;
+        top: 12px;
+        right: 0;
+        transform: translateY(-100%);
+    }
+    .boxSI__coating {
+        width: 100%;
+        height: 1670px;
+        background-color: rgba(140, 149, 156,0.5);
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        display: none;
+    }
