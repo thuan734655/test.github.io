@@ -902,3 +902,64 @@ body {
         top: 0;
         display: none;
     }
+    /* next page*/
+    .nextPage {
+        width: 250px;
+        height: 30px;
+        background-color: #cfc7c7;
+        margin-left: 200px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .nextPage1 {
+        margin-left: 30px;
+        cursor: pointer;
+        
+    }
+    .nextPage2 {
+        margin-left: 20px;
+        cursor: pointer;
+        
+    }
+    .nextPage3 {
+        margin-left: 20px;
+        cursor: pointer;
+        
+    }
+    .nextPage4 {
+        margin-left: 20px;
+        cursor: pointer;
+        
+    }
+    .nextPage5 {
+        margin-left: 15px;
+        cursor: pointer;
+        
+    }
+
+    .nextPage1__text {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .nextPage2__text {
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(8, 8, 8);
+    }
+    .nextPage3__text {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .nextPage4__text {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .nextPage5__text {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
