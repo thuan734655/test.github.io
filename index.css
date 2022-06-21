@@ -145,10 +145,7 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
-   
- 
-    
+    overflow: auto;
 }
 .descripbeWeb{
     color: orange;
@@ -179,6 +176,33 @@ body{
 }
 
 /* js father */
+.jsFather-title {
+    border-top: 2px solid darkgray ;
+    margin-left: 5% ;
+    width: 90%;
+     height:50px;
+     background-color:black;
+      margin-top: 20px;
+}
+.java-father::-webkit-scrollbar {
+    width:5px;
+    height: 5px;
+}
+.java-father::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+.java-father::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
+}
+
+/* js father*/
+.jsFather-title__text {
+    color: aliceblue;
+    margin-left: 400px;
+
+}
 .js-father {
     width: 74%;
     height: 550px;
@@ -190,9 +214,21 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+   overflow: auto;
  
     
+}
+.js-father::-webkit-scrollbar {
+    width:5px;
+    height: 5px;
+}
+.js-father::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+.js-father::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
 }
 .descripbeWeb{
     color: orange;

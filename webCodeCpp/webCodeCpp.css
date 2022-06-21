@@ -1,0 +1,870 @@
+body {
+    background-color: black;
+}
+/* navigation select */
+.nav {
+ background-color: black;
+ display:flex;
+ justify-content: space-between;
+ border-bottom: 1px solid darkgray ;
+}
+.nav-list {
+ display: inline-flex;
+ padding-left: 0;
+ padding-right: 20px;
+ 
+}
+.nav-list__item__java {
+    color:aliceblue;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.nav-list__item__Python {
+    color:aliceblue;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.nav-list__item__C {
+    color:aliceblue;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.nav-list__item__CSharp {
+    color:aliceblue;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.nav-list__item__Cpp{
+    color:aliceblue;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.nav-list__item__setting {
+    color:aliceblue;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-list__item__profile {
+    color:aliceblue;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-list__item__signOut {
+    color:aliceblue;
+    list-style: none;
+    padding-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav__item__right__Hover:hover{
+    color: orangered;
+}
+.nav-list__item:hover {
+   color: orangered;
+}
+.nav-list__item__link {
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-list__item__link:hover {
+    color: orangered;
+}
+
+/* sign out*/
+.signOut{
+    width: 300px;
+    height: 100px;
+    border-radius:10px ;
+    background-color: antiquewhite;
+    margin-top: 30%;
+    margin-left: 35%;
+    position: absolute;
+    top:0; 
+    z-index: 2;
+    display: none;
+
+}
+.signOut-Sure{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 60px;
+    justify-content: space-between;
+}
+.signOut__Yes{
+    padding-right: 56px;
+    color: rgb(15, 121, 59);
+    text-decoration: none;
+   
+}
+.signOut__No {
+    color: red;
+    cursor: pointer;
+}
+.signOut-title {
+    margin-left: 16px;
+}
+.coating {
+  width: 100%;
+  height: 2000px;
+  position:absolute;
+  background-color:rgba(220, 215, 221, 0.57) ;
+  top:0;
+  z-index: 1;
+  display: none;
+}
+/* music and exercise*/
+.musicAndExercise {
+    margin-top:10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows:300px 200px ;
+    gap: 20px 20px;  
+}
+/* music*/
+
+.music {
+    border: 1px solid darkgray;
+    min-width: 300px;
+    overflow: auto;
+}
+.music::-webkit-scrollbar {
+    width:5px;
+}
+.music::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+.music::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
+}
+.music-title {
+    color: cadetblue ;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: 20px;
+}
+.relaxPlaylistAll {
+    color:rgb(221, 204, 228);
+    cursor: pointer;
+}
+.relaxPlaylistAll:hover {
+    color: rgb(179, 179, 171);
+}
+.video {
+    margin-top: 120px;
+    width: 150px;
+    border: 2px solid darkgray;
+}
+.relaxPlaylist1 {
+    display: none;
+    
+    top:455px;
+    border-radius: 10px;
+}
+
+.relaxPlaylist2 {
+    
+  
+    top:455px;
+    border-radius: 10px;
+}
+
+.relaxPlaylist3 {
+    display: none;
+    
+    top:455px;
+    border-radius: 10px;
+}
+
+.relaxPlaylist4 {
+    display: none;
+   
+    top:455px;
+    border-radius: 10px;
+}
+
+.relaxPlaylist5 {
+    display: none;
+    
+    top:455px;
+    border-radius: 10px;
+}
+.hideVideo {
+    color:rgb(216, 28, 28) ;
+    margin-top: 0;
+    margin-left: 30px;
+     font-size: 14px;
+     cursor: pointer;
+}
+.hideVideo:hover {
+    color:orangered ;
+}
+.music-note{
+    margin-left: 10px;
+  color:rgb(204, 156, 23);
+}
+/*exercise*/
+.exercise {
+    
+    border: 1px solid darkgray;
+    grid-column:2/4;
+    overflow: auto;
+}
+
+.exercise-note {
+
+    color:chocolate ;
+     margin-left: 10px;
+}
+
+.exercise::-webkit-scrollbar {
+    width:5px;
+}
+.exercise::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+.exercise::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
+}
+/* input output*/
+#Input {
+    grid-column:2/3;
+    border: 1px solid darkgray;
+}
+#Output {
+    border: 1px solid darkgray;
+}
+.video {
+    margin:0;
+    grid-column:-3/-4;
+}
+
+/*compiler*/
+
+.compiler {
+    margin-top: 20px;
+    width: 100%;
+    height: 1000px;
+}
+
+/* screen classification*/
+@media screen  and (max-width:713px){
+    .musicAndExercise {
+        margin-top:10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows:500px 200px ;
+        gap: 20px 20px;  
+    }
+    .relaxPlaylistAll {
+        padding-bottom: 30px;
+        color:rgb(221, 204, 228);
+    }
+    .music-note {
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    .exercise-note {
+        margin-top: 100px;
+        color:chocolate ;
+         margin-left: 10px;
+    }
+    .music-title {
+        color: cadetblue ;
+        margin-top: 10px;
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    
+}
+
+/* profile*/
+.profile {
+    width: 300px;
+    height: 500px;
+    background-color: antiquewhite;
+    position: absolute;
+    z-index: 4;
+    top : 60px;
+    right: 9px;
+    border-radius:5px ;
+    display:none;
+    overflow: auto;
+}
+.profile::-webkit-scrollbar {
+    width:5px;
+    height: 5px;
+}
+.profile::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+.profile::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
+}
+.profile-iconTriangle{
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid antiquewhite;
+  position: absolute;
+  top: 1px;
+  left:20px;
+  transform: translateY(-100%);
+
+}
+.profile-story {
+ 
+}
+
+.profile-avatar {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  background-color: rgb(186, 181, 174);
+  left: 100px;
+  bottom: 230px;
+}
+.profile-avatar-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    object-fit:contain ;
+}
+.profile-coverImage{
+  width: 280px;
+  height: 230px;
+  background-color: rgb(203, 200, 196);
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.profile-coverImage__item {
+    width:280px;
+    height: 230px;
+    border-radius:10px ;
+    object-fit:cover;
+}
+.profile-story__name {
+    margin-left: 80px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.profile-story__text {
+    width: 250px;
+    height: 150px;
+    background-color: rgb(203, 200, 196);
+    border-radius: 10px;
+    margin-left: 25px;
+}
+.profile-story__text__item {
+    margin-left: 10px;
+}
+.profile-close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+ }
+
+ /* setting list*/
+.settingList {
+    width: 250px;
+    height: 200px;
+    background-color: wheat;
+    position: absolute;
+    z-index: 4;
+    top:60px;
+    right: 15px;
+    border-radius:4px ;
+    display: none;
+
+}
+ .settingList-item__setting {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__feedback {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__game {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__report{
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__changeAccount {
+    width: 100%;
+   font-size: 20px;
+   border-bottom: 1px solid darkgray;
+   padding-bottom: 10px;
+   cursor: pointer;
+ 
+ }
+ .settingList-item__setting:hover {
+    background-color: cornsilk;
+ }
+ .settingList-item__game:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item__report:hover {
+    background-color: cornsilk;
+ }
+ .settingList-item__changeAccount:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item__feedback:hover {
+    background-color: cornsilk;
+ }
+ 
+ .settingList-item:first-child::after{
+    content: "";
+    height: 20px;
+    background-color:re; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translateY(-100%);
+}
+  .setting-iconTriangle {
+   content: "";
+   position: absolute;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-bottom: 10px solid wheat;
+   transform: translateY(-90%);
+   left: 200px;
+  }
+  
+ .settingList-close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+ }
+ .settingList-textAndicon {
+    margin:10px 60px;
+ }
+
+ /*  feature setting*/
+  .featureSetting {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(1, 1, 1);
+    border: 1px solid darkgray;
+    position: absolute;
+    z-index: 4;
+    top: 60px;
+    right: 265px;
+    display: none;
+  }
+ .featureSetting__text__rename {
+    color: antiquewhite;
+    margin-left: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+ }
+ .featingSetting__text__changePassword{
+     color: antiquewhite;
+     margin-left: 20px;
+     margin-top: 10px;
+     cursor: pointer;
+ }
+ .featureSetting__text__rename:hover {
+    color:rgb(194, 194, 162);
+ }
+ .featingSetting__text__changePassword:hover {
+    color:rgb(194, 194, 162);
+
+ }
+ .featureSetting-rename {
+    width: 350px;
+    height: 160px;
+    position: absolute;
+    z-index: 6;
+    background-color: aliceblue;
+    top: 370px;
+    left: 30%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    grid-template-rows:30px 30px 30px 30px 30px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    visibility:hidden;
+    
+ }
+ .featureSetting-rename__title {
+    font-weight: bold;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 5px ;
+ }
+ .featureSetting-rename__input {
+    border-radius: 5px;
+    grid-column: 2/4;
+ }
+.rename-notification {
+    display: none;
+   grid-column: 2/4; 
+   color: rgb(235, 47, 47);
+}
+ .Password-title {
+    margin: 5px;
+    grid-row: 3/4;
+    font-weight: bold;
+    grid-column: 1/2;
+    
+ }
+ .checkPassword-input {
+    border-radius: 5px;
+   grid-column: 2/4;
+   grid-row: 3/4;
+ }
+ .Password-notionfication {
+    display: none;
+    color: rgb(235, 47, 47);
+    grid-column: 2/4; 
+ }
+.rename-confirm {
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+.rename-confirm__content{
+    margin-left: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+}
+.featureSetting-rename__close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+}
+.featureSetting-rename__coating {
+    width: 100%;
+    height: 1670px;
+    background-color: rgba(140, 149, 156,0.5);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    display: none;
+}
+.featureSetting-rename__result {
+    margin-top: 0px;
+    margin-left: 90px;
+    font-weight: bold;
+    color: green;
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+
+
+/*change password*/
+.featureSetting-changePassword {
+    width: 350px;
+    height: 160px;
+    position: absolute;
+    z-index: 6;
+    background-color: rgb(212, 220, 228);
+    top: 370px;
+    left: 30%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    grid-template-rows:30px 30px 30px 30px 30px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    visibility:hidden;
+    
+ }
+ .featureSetting-changePassword__title {
+    font-weight: bold;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 5px ;
+ }
+ .featureSetting-changePassword__input {
+    border-radius: 5px;
+    grid-column: 2/4;
+ }
+.rename-notification {
+    display: none;
+   grid-column: 2/4; 
+   color: rgb(235, 47, 47);
+}
+ .Password-title {
+    margin: 5px;
+    grid-row: 3/4;
+    font-weight: bold;
+    grid-column: 1/2;
+    
+ }
+ .checkPassword-input {
+    border-radius: 5px;
+   grid-column: 2/4;
+   grid-row: 3/4;
+ }
+ .Password-notionfication {
+    display: none;
+    color: rgb(235, 47, 47);
+    grid-column: 2/4; 
+ }
+.rename-confirm {
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+.rename-confirm__content{
+    margin-left: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+}
+.featureSetting-changePassword__close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+}
+.featureSetting-changePassword__coating {
+    width: 100%;
+    height: 1670px;
+    background-color: rgba(140, 149, 156,0.5);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    display: none;
+}
+.featureSetting-changePassword__result {
+    margin-top: 0px;
+    margin-left: 90px;
+    font-weight: bold;
+    color: green;
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+
+/* feature report*/
+
+.feature-report__guide {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(1, 1, 1);
+    border: 1px solid darkgray;
+    position: absolute;
+    z-index: 10;
+    top: 94px;
+    right: 265px;
+    display: none;
+}
+.feature-report__guide__text {
+    margin-left: 8px;
+    color: aliceblue;
+}
+.feature-report {
+    width: 550px;
+    height: 460px;
+    position: absolute;
+    z-index: 6;
+    background-color: aliceblue;
+    top: 300px;
+    left: 30%;
+    border-radius: 10px ;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 200px 180px 70px;
+    visibility: hidden;
+}
+.feature-report-input__text {
+    font-weight: bold;
+    margin-left: 10px;
+    grid-row: 2/3;
+}
+.feature-report-input {
+  grid-row: 1/3;
+  grid-column: 2/4;
+}
+.feature-report__submit {
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 160px;
+    margin-top: 15px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.feature-report__result{
+    /* margin-top: 0px; */
+    margin-left: 90px;
+    font-weight: bold;
+    color: green;
+    grid-row: 3/4;
+    grid-column: 3/4;
+    display: none;
+}
+.feature-report__close {
+    position:absolute;
+    top: 12px;
+    right: 0;
+    transform: translateY(-100%);
+}
+.featureSetting-report__coating {
+    width: 100%;
+    height: 1670px;
+    background-color: rgba(140, 149, 156,0.5);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    display: none;
+}
+
+/*setting feedback*/
+.feature-feedback {
+    width: 100px;
+    height: 130px;
+    background-color: rgb(6, 6, 6);
+    position: absolute;
+    top: 128px;
+    right: 265px;
+    z-index: 5;
+    display: none;
+    border: 1px solid darkgray;
+}
+.feature-feedback__item {
+    margin-left: 5px;
+    margin-top: 10px;
+    color: white;
+}
+.feature-feedback__submit {
+    margin-left: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(23, 141, 180);
+}
+ 
+
+/* setting change Password*/
+
+.feature-changeAccount__guide{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(8, 7, 7);
+    border: 1px solid darkgray;
+    position: absolute;
+    z-index: 10;
+    top: 94px;
+    right: 265px;
+    display: none;
+}
+
+.feature-changeAccount__guide__text{
+    margin-left: 8px;
+    color: aliceblue;
+}
+.boxSI{
+    height: 300px;
+    width: 450px;
+    background-color: beige;
+    display: none;
+    border-radius: 10px;
+   position: absolute;
+   z-index: 8;
+   top:400px;
+   left: 30%;
+
+}
+
+    .boxSI-label{
+    color: rgba(4, 2, 32, 0.778);
+     min-width: 100px;
+      
+    }
+    .input{
+      display: flex;
+     flex: 1;    
+    }
+     .boxSI-align{
+        width: 70px;
+        margin-top: 50px;
+        margin-left: 170px;
+     }
+  
+   #next {
+    font-size: 16px;
+    display: none;
+   }
+     .notification{
+        color:red;
+        font-size: 13px;
+        min-width: 100px;
+        display: inline-flex;
+        display: none;
+     }
+     .next{
+      min-width: 100px;
+     text-decoration: none;
+     color: black;
+     font-size: 16px;
+         }
+
+     
+     .next:hover{
+      color: #dc4a38;
+     }
+     .align {
+      display: inline-flex;
+      
+
+     }
+     .boxSI__close {
+        position:absolute;
+        top: 12px;
+        right: 0;
+        transform: translateY(-100%);
+    }
+    .boxSI__coating {
+        width: 100%;
+        height: 1670px;
+        background-color: rgba(140, 149, 156,0.5);
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        display: none;
+    }

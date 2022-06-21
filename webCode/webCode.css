@@ -132,9 +132,22 @@ body {
     gap: 20px 20px;  
 }
 /* music*/
+
 .music {
     border: 1px solid darkgray;
     min-width: 300px;
+    overflow: auto;
+}
+.music::-webkit-scrollbar {
+    width:5px;
+}
+.music::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+.music::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
 }
 .music-title {
     color: cadetblue ;
@@ -207,6 +220,7 @@ body {
     
     border: 1px solid darkgray;
     grid-column:2/4;
+    overflow: auto;
 }
 
 .exercise-note {
@@ -215,6 +229,17 @@ body {
      margin-left: 10px;
 }
 
+.exercise::-webkit-scrollbar {
+    width:5px;
+}
+.exercise::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+.exercise::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
+}
 /* input output*/
 #Input {
     grid-column:2/3;
@@ -278,6 +303,19 @@ body {
     right: 9px;
     border-radius:5px ;
     display:none;
+    overflow: auto;
+}
+.profile::-webkit-scrollbar {
+    width:5px;
+    height: 5px;
+}
+.profile::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,rgb(23, 61, 200),rgb(26, 164, 198));
+    border-radius: 200px;
+}
+.profile::-webkit-scrollbar-track {
+    background-color: #beb7b7;
+    border-radius: 200px;
 }
 .profile-iconTriangle{
   border-left: 10px solid transparent;

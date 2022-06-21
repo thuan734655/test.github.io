@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="webCodePython.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+</head>
+<body>
+
+    <!-- navigation select -->
+    <div class="nav">
+        <ul class="nav-list">
+            <li class="nav-list__item__java" ><a class="nav-list__item__link" href="./webCodeJava.html">Java</a></li >
+            <li class="nav-list__item__Python" ><a class="nav-list__item__link" href="./webCodePython.html">Python</a></li>
+            <li class="nav-list__item__Cpp" > <a class="nav-list__item__link" href="./webCodeCpp.html"> C++</a></li>
+            <li class="nav-list__item__C" > <a class="nav-list__item__link" href="./webcodeC.html"> C</a></li>
+            <li class="nav-list__item__CSharp" > <a class="nav-list__item__link" href="./webCodeCSharp.html"> C#</a></li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-list__item__profile nav__item__right__Hover">profile <i class="fa-solid fa-user-tie"></i></li>
+            <li class="nav-list__item__signOut nav__item__right__Hover">Sign out</li>
+            <li class="nav-list__item__setting nav__item__right__Hover">Setting <i class="fa-solid fa-gears"></i></li>
+            
+            
+        </ul>
+    </div>
+    <!--  Setting list item -->
+       <div class="settingList" >
+
+        <div class="setting-iconTriangle" ></div>
+
+        <div class="settingList-item__setting"> <span class="settingList-textAndicon" > setting  <i class="fa-duotone fa-gear"></i> </span> </div>
+
+        <div class="settingList-item__report"> <span class="settingList-textAndicon" > report <i class="fa-regular fa-flag"></i>  </div>
+        <div class="settingList-item__feedback"> <span class="settingList-textAndicon" >feedback <i class="fa-solid fa-comment-slash"></i></div>
+        <!-- <div class="settingList-item__game"> <span class="settingList-textAndicon" >Game <i class="fa-solid fa-gamepad"></i></div> -->
+            <div class="settingList-item__changeAccount"> <span class="settingList-textAndicon" >change account </div>
+        
+                <!-- settinglist close -->
+        <div class="settingList-close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+    
+                
+        </div>
+         <!-- feature setting -->
+          
+         <div class="featureSetting">
+
+           
+            <p class="featureSetting__text__rename"> rename</p>
+            <p class="featingSetting__text__changePassword"> chane pasword</p>
+         </div>
+
+         <!-- feature-rename -->
+         <div class="featureSetting-rename">
+            <div class="featureSetting-rename__result">success</div>
+            <div class="featureSetting-rename__close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+            <label class="featureSetting-rename__title" for="rename"> new name:</label>
+            <input class="featureSetting-rename__input" type="text">
+            <br>
+            
+            <label class="rename-notification" for="notification">tên không hợp lệ</label>
+            <label class="Password-title" for="checkPassword"> Password:</label>
+            <input class="checkPassword-input" type="text">
+            <label class="Password-notionfication" for="notification"> Password không đúng</label>
+            <div class="rename-confirm"> <span class="rename-confirm__content">confirm</span></div>
+        </div>
+        <div class="featureSetting-rename__coating"></div>
+      
+
+         <!-- feature-changePassword-->
+         <div class="featureSetting-changePassword">
+            <p class="featureSetting-changePassword__result"> success </p>
+
+            <div class="featureSetting-changePassword__close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+            <label class="featureSetting-changePassword__title" for="rename"> new password:</label>
+            <input class="featureSetting-changePassword__input" type="text">
+            <br>
+            
+            <label class="rename-notification" for="notification">mật khẩu không hợp lệ</label>
+            <label class="Password-title" for="checkPassword"> Old password:</label>
+            <input class="checkPassword-input" type="text">
+            <label class="Password-notionfication" for="notification"> Password không đúng</label>
+            <div class="rename-confirm"> <span class="rename-confirm__content">confirm</span></div>
+        </div>
+        <div class="featureSetting-changePassword__coating"></div>
+       
+        <!-- feature-report-->
+        <div class="feature-report__guide">
+            <p class="feature-report__guide__text"> click vô repost đi :))</p>
+        </div>
+        <div class="feature-report">
+           
+                <div class="feature-report-input__text"> Problem:</div>
+                <textarea class="feature-report-input"  name="feature-report-input" cols="2" rows="2">
+                </textarea>
+            
+            <div class="feature-report__submit"> submit</div>
+            <p class="feature-report__result"> success </p>
+            <div class="feature-report__close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="featureSetting-report__coating"></div>
+       
+        <!-- feature-feedback-->
+
+        <div class="feature-feedback">
+            <span class="feature-feedback__item">tốt! <input class="feature-feedback__select" name="feedback" type="checkbox"></input></span>
+            <br>
+            <span class="feature-feedback__item"> rất tốt!! <input class="feature-feedback__select" name="feedback" type="checkbox"></input></span>
+            <br>
+            <span class="feature-feedback__item">quá tốt!! <input class="feature-feedback__select" name="feedback" type="checkbox"></input></span>
+            <p class="feature-feedback__submit">submit</p>
+        </div>
+
+        <!-- feature change password-->
+        <div class="feature-changeAccount__guide">
+            <p class="feature-changeAccount__guide__text"> click vô change account đi :))</p>
+        </div>
+
+        <div class = "boxSI">
+            <div class = "boxSI-align">
+                <label class = "boxSI-label" for="Name" > Name</label>
+                <label class= "notification" for="notification">wrong account</label>
+                <input id="Name" class = "input"  type="text" > 
+                <br>
+               
+                
+                 <label class = "boxSI-label"for="Password">Password</label>
+                 <label class= "notification" for="notification">wrong Password</label>
+                 <input id ="Password" class = "input" type="text">   
+               
+                 <br>
+                   <div class ="align">
+                     <button id ="button__submit">Sign in</button>
+                     <br/>
+                
+                   <button id="next" style="margin-left: 10px;"><a class="next"  href="./Webcontent.html"> next</a></button>
+                   </div>
+                   <br>   
+                   <div class="align">
+                    <!-- <h1 class = "next" href="./signUp.html"> sign Up</h1> -->
+                   </div>                   
+            </div>
+
+            <div class="boxSI__close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+          </div>
+          <div class="boxSI__coating "></div>
+
+
+    <div class="musicAndExercise">
+        <div class="music">
+            <!-- from music -->
+                <h4 class="music-title">relax playlist</h4>           
+               <ul>
+                <li  class="relaxPlaylistAll" >Bình yên thư giãn nhẹ nhàng</li>
+                <li  class="relaxPlaylistAll" >nhac năng động</li>
+                <li  class="relaxPlaylistAll">Nhạc Không Lời Nhẹ Nhàng Thư Giãn</li>
+                <li  class="relaxPlaylistAll" >Nhạc Nhẹ Nhàng Không Lời Thư Giãn</li>
+                <li  class="relaxPlaylistAll">  Nhạc Nhẹ Nhàng Không Lời Thư Giãn 2</li>
+               </ul>
+               <h4 class="hideVideo"> hide video </h4>
+               <p class="music-note">note: chỉ bật 1 video nhé. nếu muón đổi nhạc thì reload lại trang :></p> 
+        </div>
+
+          <!-- exercise -->
+        <div class="exercise">
+             <div class="topic">
+                <h1 style="color:aliceblue; margin-left:40px"> Bài tập</h1>
+                <p style="color:aliceblue; margin-left: 10px;">  Cho trước hình chữ nhật. Bạn hãy viết chương trình hiển thị diện tích của hình chữ nhật này ra màn hình giống như sau:
+                     Area = {P}
+               </p style="color:aliceblue; margin-left: 10px;">
+                <p style="color:aliceblue; margin-left: 10px;">  Với {P} là diện tích của hình chữ nhật</p>
+                
+                <p style="color:white;margin-left:10px; font-size: 18px">Input:</p>
+                <p style="color:white;margin-left: 10px;">- dòng đầu là chiều dài. dòng thứ 2 là chiều rộng.</p> 
+                 
+                <p class="exercise-note">note: chọn ngôn ngữ lập trình ở trên thanh diều hướng. bấm run để chạy code </p>
+            </div>
+           
+       </div>
+
+
+
+       <!-- link music -->
+       <div class ="video">
+        <iframe class = "relaxPlaylist1 turnOff"  width="300" height="225" src="https://www.youtube.com/embed/S2GxPJtBzcw?start=360" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe  class = "relaxPlaylist2 turnOff " width="300" height="225" src="https://www.youtube.com/embed/D1iLQpNjjUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe  class = "relaxPlaylist3 turnOff " width="300" height="225" src="https://www.youtube.com/embed/Eag3k9p4pr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe class = "relaxPlaylist4 turnOff " width="300" height="225" src="https://www.youtube.com/embed/HSOtku1j600" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe class = "relaxPlaylist5 turnOff " width="300" height="225" src="https://www.youtube.com/embed/4P0R9dUJ370" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+
+
+       <!-- input-->
+       <div id="Input">
+        <p style="color:white;margin-left:30px; font-size: 18px; ;">Input:</p>
+        <p style="color:white;margin-left: 30px;">7.5</p>
+        <p style="color:white;margin-left: 30px;">3.8</p>
+     </div>
+
+     <!-- output  -->
+     <div id="Output">
+        <p style="color:white;margin-left:30px; font-size: 18px; ;">Output:</p>
+        <p style="color:white;margin-left: 30px;">28.5</p>
+     </div>
+      
+    </div>
+
+    <!-- compiler -->
+    <div class="compiler">
+        <iframe  class="compiler" src="https://www.programiz.com/python-programming/online-compiler/" frameborder="0"></iframe>
+    </div>
+            <!--sign out -->
+            <div class="signOut">
+                <h3 class ="signOut-title"> you are sure you want to sign out </h3>
+                <ul class="signOut-Sure">
+                    <li class = "signOut__Yes"> <a class ="signOut__Yes" href="./index.html">Yes</a></li>
+                    <li class = "signOut__No" > No</li>
+                </ul>
+            </div>
+            <div class="coating"></div>
+
+            <!-- profile -->
+            <div class="profile">
+                <div class="profile-close"><i style="color: rgb(216, 28, 28);" class="fa-solid fa-xmark"></i></div>
+
+                <div class="profile-iconTriangle"></div>
+
+                <div class="profile-coverImage">
+                    <img class="profile-coverImage__item" src="./image/coverImage.jpg" alt="">
+                </div>
+                <div class="profile-avatar">
+                    <img class="profile-avatar-item" src="./image/avtdefault.png" alt="">
+                </div>
+                <div class="profile-story">
+                    <p class="profile-story__name">Vương Ngọc Thuận</p>
+                 
+                    <div class="profile-story__text">
+                        <p class="profile-story__text__item"> câu nói để đời:</p>
+                    </div>
+               </div>
+            </div>
+
+
+            <script src="./webCodePython.js"></script>
+</body>
+
+</html>
