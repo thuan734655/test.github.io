@@ -148,6 +148,18 @@ body{
     flex-direction: row-reverse;
     overflow: auto;
 }
+.javaFather-title {
+    border-top: 1px solid darkgray ;
+    margin-left: 5% ;
+    width: 90%; 
+    height:50px;
+    background-color:black;
+     margin-top: 200px;
+}
+.javaFather-title__text {
+    color: rgb(238, 241, 245);
+     margin-left: 53%;
+}
 .descripbeWeb{
     color: orange;
     font-size: 20px;
@@ -177,6 +189,23 @@ body{
 }
 
 /* js father */
+
+
+.js-father {
+    width: 74%;
+    height: 550px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:10% ;
+    margin-top: 50px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+   overflow: auto;
+ 
+    
+}
 .jsFather-title {
     border-top: 2px solid darkgray ;
     margin-left: 5% ;
@@ -184,6 +213,11 @@ body{
      height:50px;
      background-color:black;
       margin-top: 20px;
+}
+.jsFather-title__text {
+    color: aliceblue;
+    margin-left: 50%;
+
 }
 .java-father::-webkit-scrollbar {
     width:5px;
@@ -203,21 +237,6 @@ body{
     color: aliceblue;
     margin-left: 50%;
 
-}
-.js-father {
-    width: 74%;
-    height: 550px;
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left:10% ;
-    margin-top: 50px; 
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-   overflow: auto;
- 
-    
 }
 .js-father::-webkit-scrollbar {
     width:5px;
@@ -279,4 +298,119 @@ border: 2px solid darkgray;
 color: #dc4a38;
 left:20%;
 top:95px
+}
+
+/* screen classification*/
+@media screen  and (max-width:884px){
+    .javaFather-title {
+        border-top: 1px solid darkgray ;
+        margin-left: 5% ;
+        width: 90%; 
+        height:50px;
+        background-color:black;
+         margin-top: 200px;
+    }
+    .javaFather-title__text {
+        color: rgb(238, 241, 245);
+         margin-left: 300px;
+    }
+    .jsFather-title {
+        border-top: 2px solid darkgray ;
+        margin-left: 5% ;
+        width: 90%;
+         height:50px;
+         background-color:black;
+          margin-top: 20px;
+    }
+    .jsFather-title__text {
+        color: aliceblue;
+        margin-left: 260px;
+    
+    }
+
+}
+
+/* screen classification*/
+@media screen  and (max-width:391px){
+    .java-father {
+        width: 74%;
+        height: 600px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left:170px ;
+        margin-top: 50px; 
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: auto;
+    }
+    .javaFather-title {
+        border-top: 2px solid rgb(119, 114, 114) ;
+        margin-left: 5% ;
+        width: 560px;
+         height:50px;
+         background-color:black;
+          margin-top: 180px;
+    }
+    .javaFather-title__text {
+        color: rgb(238, 241, 245);
+         margin-left: 220px;
+    }
+
+    .js-father {
+        width: 74%;
+        height: 550px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left:200px ;
+        margin-top: 50px; 
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+       overflow: auto;
+     
+        
+    }
+    .jsFather-title {
+        border-top: 2px solid rgb(104, 101, 101) ;
+        margin-left: 5% ;
+        width: 560px;
+         height:50px;
+         background-color:black;
+          margin-top: 20px;
+    }
+    .jsFather-title__text {
+        color: aliceblue;
+        margin-left: 220px;
+    
+    }
+
+    .box {
+      width: 590px;
+      height: 70px;
+        display: flex;
+        margin: 0;
+      
+        justify-content:space-between;
+        background-color:#070606;
+        border-bottom: 1px solid darkgray;
+    }
+    .note {
+        position: absolute;
+        z-index: 9;
+        width: 500px;
+        min-height: 100px;
+        background-color:black;
+        border: 2px solid darkgray;
+        color: #dc4a38;
+        left:40px;
+        top:95px;
+        right:40px;
+        }
+   
+}
+@media screen {
+    
 }
