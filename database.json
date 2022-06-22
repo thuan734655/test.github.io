@@ -1,0 +1,17 @@
+{
+    "user": [
+      {
+        "id": "1",
+        "name": "thuan2",
+        "Password": "123456789"
+      }
+     
+    ],
+    "information":[
+        {
+            "id":"1",
+            "Uname":"vương ngọc thuận",
+            "story":"aaaaaa"
+        }
+    ]
+  }

@@ -256,3 +256,5 @@ var settingClose = document.querySelector('.settingList-close')
         boxSI__coating.style.display = "none"
         boxSI.style.display = "none"
     }
+  
+   
